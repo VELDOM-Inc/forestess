@@ -1,0 +1,160 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.c-contact-form {
+	margin: 0 0 185px;
+
+	@include g.smMax {
+		margin: 0 0 70px;
+	}
+
+	&__txt {
+		margin: 5px 0 0;
+
+		@include g.smMax {
+			margin: 10px 0 0;
+		}
+	}
+	
+	&-tel {
+		max-width: 960px;
+		margin: 0 auto 100px;
+		text-align: center;
+
+		@include g.smMax {
+			margin: 0 auto 50px;
+		}
+
+		&__ttl {
+			font-size: 2.3rem;
+			margin: 0 0 20px;
+			@include g.font-bold;
+
+			@include g.smMax {
+				margin: 0 0 10px;
+				font-size: 1.9rem;
+			}
+		}
+
+		&__txt {
+			font-size: 3.2rem;
+			font-weight: 700;
+			@include g.font-en;
+			margin: 0 0 15px;
+			color: g.$baseColor;
+			line-height: 1.4;
+
+			@include g.smMax {
+				font-size: g.$fz-xl;
+				margin: 0 0 10px;
+			}
+
+			.__tel {
+				font-size: 4.8rem;
+				color: g.$baseColor;
+				line-height: 1.0;
+
+				@include g.smMax {
+					font-size: 3.0rem;
+				}
+			}
+		}
+	}	
+
+	&-time {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include g.smMax {
+			flex-direction: column;
+		}
+
+		&__txt {
+			margin: 0 30px 0 0;
+
+			@include g.smMax {
+				margin: 0;
+			}
+		}
+
+		&__area {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@include g.smMax {
+				margin: 10px 0 0;
+			}
+
+			.__label {
+				background: g.$baseColor;
+				@include g.radius(30);
+				font-size: 1.5rem;
+				font-weight: 700;
+				color: g.$white;
+				padding: 5px 15px;
+				margin: 0 15px 0 0;
+			}
+		}
+	}
+
+	.m-table {
+		th {
+			padding: 30px 0;
+
+			@include g.smMax {
+				padding: 15px 0 5px;
+			}
+		}
+		tr {
+			&:first-child {
+				th {
+					padding: 30px 0;
+
+					@include g.smMax {
+						padding: 0 0 5px;
+					}
+				}	
+				td {
+					padding: 30px 0 30px 100px;
+
+					@include g.smMax {
+						padding: 5px 0 15px;
+					}
+				}
+			}
+		}
+		td {
+			padding: 30px 0 30px 100px;
+
+			@include g.smMax {
+				padding: 5px 0 15px;
+			}
+		}
+	}
+
+	.m-box {
+		.__ttl {
+			margin: 0 0 10px;
+			font-size: 1.7rem;
+			@include g.font-bold;
+		}
+	}
+
+	&__btn {
+		@include g.smMax {
+			.e-btn-arrow {
+				margin: 0;
+
+				&._gray_ {
+					order: 2;
+				}
+
+				&._yellow_ {
+					order: 1;
+					margin: 0 0 20px;
+				}
+			}
+		}
+	}
+}

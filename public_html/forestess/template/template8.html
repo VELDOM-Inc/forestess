@@ -1,0 +1,539 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>テンプレート：テーブル</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="robots" content="noindex, nofollow">
+		<!--============================================== html_head -->
+		<!--#include virtual="/ikeda/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+		<style type="text/css">
+			.pre {
+				width: 100%;
+				max-width: 1200px;
+				margin: 40px 0 80px;
+				padding: 15px;
+				border: 3px double #ddd;
+				font-size: 11px;
+				overflow-x: auto;
+			}
+		</style>		
+	</head>
+
+	<body>
+		<div class="t-wrap">
+			<!--============================================== header -->
+			<!--#include virtual="/ikeda/common/inc/header.html" -->
+			<!--============================================== /header -->
+
+			<!-- .e-h1 -->
+			<div class="e-h1">
+				<div class="e-h1__inner">
+					<!-- .c-breadcrumb -->
+					<nav class="c-breadcrumb inview fadeup">
+						<ul class="c-breadcrumb__inner">
+							<li class="c-breadcrumb__item"><a href="/ikeda/" class="c-breadcrumb__link">TOP</a></li>
+							<li class="c-breadcrumb__item">テンプレート</li>
+							<li class="c-breadcrumb__item">テーブル</li>
+						</ul>
+					</nav>
+					<!-- /.c-breadcrumb -->
+					<div class="e-h1__ttl inview fadeup">
+						<h1 class="__jp">テーブル</h1>
+						<span class="__en">Table</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.e-h1 -->
+			
+			<!-- .l-contents -->
+			<div class="l-contents">
+				<!-- .l-contents__inner -->
+				<div class="l-contents__inner">
+					<!--============================================== template-nav -->
+					<!--#include virtual="/ikeda/template/template-nav.html" -->
+					<!--============================================== /template-nav -->
+				
+				<h2 class="e-h2" data-en="Table">テーブル</h2>
+				<table class="m-table">
+					<thead class="m-table__head">
+						<tr>
+							<th class="">見出し</th>
+							<th class="">見出し</th>
+							<th class=" _al-c_">見出し中央寄せ<br>class="_al-c_"</th>
+							<th class=" _al-r_">見出し右寄せ<br>class="_al-r_"</th>
+						</tr>
+					</thead>
+					<tbody class="m-table__body">
+						<tr>
+							<th class="">見出し1-1</th>
+							<td>左寄せ<br> class指定なし</td>
+							<td class="_al-c_">中央寄せ<br>class="_al-c_"</td>
+							<td class="_al-r_">右寄せ<br>class="_al-r_"</td>
+						</tr>
+						<tr>
+							<th class="">見出し1-1</th>
+							<td>左寄せ<br> class指定なし</td>
+							<td class="_al-c_">中央寄せ<br>class="_al-c_"</td>
+							<td class="_al-r_">右寄せ<br>class="_al-r_"</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pre">
+					<pre><code>&lt;table class="m-table"&gt;
+	&lt;thead class="m-table__head"&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し&lt;/th&gt;
+			&lt;th class=""&gt;見出し&lt;/th&gt;
+			&lt;th class=" _al-c_"&gt;見出し中央寄せ&lt;br&gt;class="_al-c_"&lt;/th&gt;
+			&lt;th class=" _al-r_"&gt;見出し右寄せ&lt;br&gt;class="_al-r_"&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody class="m-table__body"&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+			&lt;td&gt;左寄せ&lt;br&gt; class指定なし&lt;/td&gt;
+			&lt;td class="_al-c_"&gt;中央寄せ&lt;br&gt;class="_al-c_"&lt;/td&gt;
+			&lt;td class="_al-r_"&gt;右寄せ&lt;br&gt;class="_al-r_"&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+			&lt;td&gt;左寄せ&lt;br&gt; class指定なし&lt;/td&gt;
+			&lt;td class="_al-c_"&gt;中央寄せ&lt;br&gt;class="_al-c_"&lt;/td&gt;
+			&lt;td class="_al-r_"&gt;右寄せ&lt;br&gt;class="_al-r_"&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				</div>
+
+				<h3 class="e-h3">SP表示 1カラム　class="m-table _sp-col1_"</h3>
+				<table class="m-table _sp-col1_">
+					<tbody class="m-table__body">
+						<tr>
+							<th class=" _nowrap_">見出し class=""</th>
+							<td>このテキストはダミーテキストです。どの要素にスタイルが当たっているか等が一通りチェック出来るような感じになっています。</td>
+						</tr>
+						<tr>
+							<th class=" _nowrap_">見出し class=""</th>
+							<td>このテキストはダミーテキストです。どの要素にスタイルが当たっているか等が一通りチェック出来るような感じになっています。</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pre">
+					<pre><code>&lt;table class="m-table _sp-col1_"&gt;
+	&lt;tbody class="m-table__body"&gt;
+		&lt;tr&gt;
+			&lt;th class=" _nowrap_"&gt;見出し class=""&lt;/th&gt;
+			&lt;td&gt;このテキストはダミーテキストです。どの要素にスタイルが当たっているか等が一通りチェック出来るような感じになっています。&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th class=" _nowrap_"&gt;見出し class=""&lt;/th&gt;
+			&lt;td&gt;このテキストはダミーテキストです。どの要素にスタイルが当たっているか等が一通りチェック出来るような感じになっています。&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				</div>
+
+				<h3 class="e-h3">横長　class="m-table _wide_"</h3>
+				<table class="m-table _wide_">
+					<thead class="m-table__head">
+						<tr>
+							<th class="">見出し</th>
+							<th class="">見出し</th>
+							<th class="">見出し</th>
+							<th class="">見出し</th>
+							<th class="">見出し</th>
+							<th class="">見出し</th>
+							<th class="">見出し</th>
+						</tr>
+					</thead>
+					<tbody class="m-table__body">
+						<tr>
+							<th class="">見出し1-1</th>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+						</tr>
+						<tr>
+							<th class="">見出し1-1</th>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+						</tr>
+						<tr>
+							<th class="">見出し1-1</th>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+						</tr>
+						<tr>
+							<th class="">見出し1-1</th>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+						</tr>
+						<tr>
+							<th class="">見出し1-1</th>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+						</tr>
+						<tr>
+							<th class="">見出し1-1</th>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+						</tr>
+						<tr>
+							<th class="">見出し1-1</th>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pre">
+					<pre><code>&lt;table class="m-table _wide_"&gt;
+	&lt;thead class="m-table__head"&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し&lt;/th&gt;
+			&lt;th class=""&gt;見出し&lt;/th&gt;
+			&lt;th class=""&gt;見出し&lt;/th&gt;
+			&lt;th class=""&gt;見出し&lt;/th&gt;
+			&lt;th class=""&gt;見出し&lt;/th&gt;
+			&lt;th class=""&gt;見出し&lt;/th&gt;
+			&lt;th class=""&gt;見出し&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody class="m-table__body"&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				</div>
+				
+				<h3 class="e-h3">SP表示 スクロール　class="c-table-slide"</h3>
+				<div class="c-table-slide">
+					<div class="c-table-slide__coution">
+						こちらの表は横スクロールできます
+					</div>
+					<div class="c-table-slide__body">
+						<table class="m-table _slide_">
+							<thead class="m-table__head">
+								<tr>
+									<th class="">見出し</th>
+									<th class="">見出し</th>
+									<th class="">見出し</th>
+									<th class="">見出し</th>
+									<th class="">見出し</th>
+									<th class="">見出し</th>
+									<th class="">見出し</th>
+								</tr>
+							</thead>
+							<tbody class="m-table__body">
+								<tr>
+									<th class="">見出し1-1</th>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+								</tr>
+								<tr>
+									<th class="">見出し1-1</th>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+								</tr>
+								<tr>
+									<th class="">見出し1-1</th>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+								</tr>
+								<tr>
+									<th class="">見出し1-1</th>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+								</tr>
+								<tr>
+									<th class="">見出し1-1</th>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+								</tr>
+								<tr>
+									<th class="">見出し1-1</th>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+								</tr>
+								<tr>
+									<th class="">見出し1-1</th>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+									<td>内容</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="c-table-slide__coution">
+						こちらの表は横スクロールできます
+					</div>					
+				</div>
+				<div class="pre">
+					<pre><code>&lt;div class="c-table-slide"&gt;
+	&lt;div class="c-table-slide__coution"&gt;
+		こちらの表は横スクロールできます
+	&lt;/div&gt;
+	&lt;div class="c-table-slide__body"&gt;
+		&lt;table class="m-table _slide_"&gt;
+			&lt;thead class="m-table__head"&gt;
+				&lt;tr&gt;
+					&lt;th class=""&gt;見出し&lt;/th&gt;
+					&lt;th class=""&gt;見出し&lt;/th&gt;
+					&lt;th class=""&gt;見出し&lt;/th&gt;
+					&lt;th class=""&gt;見出し&lt;/th&gt;
+					&lt;th class=""&gt;見出し&lt;/th&gt;
+					&lt;th class=""&gt;見出し&lt;/th&gt;
+					&lt;th class=""&gt;見出し&lt;/th&gt;
+				&lt;/tr&gt;
+			&lt;/thead&gt;
+			&lt;tbody class="m-table__body"&gt;
+				&lt;tr&gt;
+					&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th class=""&gt;見出し1-1&lt;/th&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+					&lt;td&gt;内容&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/tbody&gt;
+		&lt;/table&gt;
+	&lt;/div&gt;
+	&lt;div class="c-table-slide__coution"&gt;
+		こちらの表は横スクロールできます
+	&lt;/div&gt;					
+&lt;/div&gt;</code></pre>
+				</div>
+
+				<h3 class="e-h3">リスト風　table class="m-table _list_"</h3>
+				<table class="m-table _list_">
+					<tbody class="m-table__body">
+						<tr>
+							<th class="">見出し class=""</th>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+						</tr>
+						<tr>
+							<th class="">見出し class=""</th>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+							<td>内容</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pre">
+					<pre><code>&lt;table class="m-table _list_"&gt;
+	&lt;tbody class="m-table__body"&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し class=""&lt;/th&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th class=""&gt;見出し class=""&lt;/th&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+			&lt;td&gt;内容&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				</div>
+
+
+				</div>
+				<!-- /.l-contents__inner -->
+				
+				<!--============================================== c-contact-bottom -->
+				<!--#include virtual="/ikeda/common/inc/c-contact-bottom.html" -->
+				<!--============================================== /c-contact-bottom -->
+			</div>
+			<!-- /.l-contents -->
+
+			<!--============================================== footer -->
+			<!--#include virtual="/ikeda/common/inc/footer.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/ikeda/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+	</body>
+</html>

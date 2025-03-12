@@ -1,0 +1,92 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.e-h1 {
+	width: 100%;
+	height: 600px;
+	background: url(/ikeda/common/img/common/bg_ttl.png), linear-gradient(284deg, #FFE066 0%, #87A7C6 27.8%, #154A7D 100%);
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	color: g.$white;
+	padding: 160px 0 0;
+
+	@include g.smMax {
+		height: 340px;
+		padding: 110px 0 0;
+		background-size: 150%, cover;
+		background-position: bottom center;
+	}
+
+	&__inner {
+		margin: 0 7.3vw;
+		height: 100%;
+		position: relative;
+
+		@include g.smMax {
+			margin: 0 3.5vw;
+		}
+	}
+
+	&__ttl {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.__jp {
+		order: 2;
+		font-size: g.$fz-xxl;
+
+		@include g.smMax {
+			font-size: g.$fz-m;
+		}
+	}
+
+	.__en {
+		order: 1;
+		font-size: 9.6rem;
+		line-height: 1.4;
+		font-weight: 500;
+		@include g.font-en;
+		line-height: 1.0;
+		margin: 0 0 10px;
+
+		@include g.smMax {
+			font-size: 4.4rem;
+		}
+	}
+
+	&._bg_ {
+		.e-h1{
+			&__ttl {
+				.__jp {
+					text-shadow: 0 0 20px g.$black, 0 0 20px g.$black;
+				}
+
+				.__en {
+					text-shadow: 0 0 20px g.$black;
+				}
+			}
+		}
+	}
+
+	&._business_ {
+		background: url(/ikeda/common/img/common/bg_ttl.png), url(/ikeda/common/img/business/bg_ttl_business.jpg);
+		background-size: cover, cover;
+		background-position: bottom center, center center;
+		background-repeat: no-repeat, no-repeat;
+	}
+
+	&._company_ {
+		background: url(/ikeda/common/img/common/bg_ttl.png), url(/ikeda/common/img/company/bg_ttl_company.jpg);
+		background-size: cover, cover;
+		background-position: bottom center, center center;
+		background-repeat: no-repeat, no-repeat;
+	}
+}

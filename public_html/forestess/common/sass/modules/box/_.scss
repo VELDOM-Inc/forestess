@@ -1,0 +1,39 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.m-box {
+	padding: 60px;
+	background: g.$white;
+
+	@include g.smMax {
+		padding: 20px;
+	}
+	&._gray_ {
+		background: g.$bg-gray;
+	}
+	&._line-gray_ {
+		border: 1px solid g.$line-gray2;
+	}
+	&._blue_ {
+		background: #EEF7FE;
+	}
+	&._radius_ {
+		border-radius: 15px;
+
+		@include g.smMax {
+			border-radius: 7px;
+		}
+	}
+	&._error_ {
+		border: 2px solid g.$red;
+		background: rgba(g.$red, 0.1);
+		color: g.$red;
+
+		.icon-error {
+			margin: 0 20px 0 0;
+
+			@include g.smMax {
+				margin: 0 10px 0 0;
+			}
+		}
+	}
+}

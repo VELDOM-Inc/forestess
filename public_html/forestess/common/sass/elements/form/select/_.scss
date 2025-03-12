@@ -1,0 +1,8 @@
+@charset "utf-8";
+@use "../../../global/_" as g;
+.e-form-select {
+	display: inline-block;
+	padding: 5px 10px;
+	background: g.$white;
+	border: 1px solid g.$line-gray;
+}

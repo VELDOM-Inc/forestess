@@ -1,0 +1,10 @@
+@charset "utf-8";
+@use 'sass:math';
+@use "../../../global/_" as g;
+.u-mt-s {
+	margin-top: g.$m-s !important;
+
+	@include g.smMax {
+		margin-top:math.div(g.$m-s, 2) !important;
+	}
+}

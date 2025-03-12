@@ -1,0 +1,157 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.l-header {
+	position: fixed;
+	top: 30px;
+	left: 0;
+	z-index: 10;
+	width: calc(100% - 10vw);
+	height: 90px;
+	@include g.radius(50);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	transition: all .3s;
+	margin: 0 5vw;
+	background: g.$white;
+
+	@include g.smMax {
+		width: calc(100% - 30px);
+		top: 15px;
+		margin: 0 15px;
+		height: 75px;
+	}
+
+	&.is-animation {
+		top: 0;
+		border-radius: 0;
+		margin: 0;
+		width: 100%;
+	}
+	
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 90px;
+		padding: 0 40px 0 45px;
+
+		@media only screen and (min-width: 768px) and (max-width: 955px) {
+			padding: 0 20px 0 25px;
+		}
+
+		@include g.smMax {
+			width: 100%;
+			padding: 0 20px;
+			height: 75px;
+		}
+	}
+
+	&-logo {
+		flex: 0 0 224px;
+		line-height: 0;
+
+		@media only screen and (min-width: 768px) and (max-width: 955px) {
+			flex: 0 0 150px;
+		}
+
+		@include g.smMax {
+			flex: 0 0 160px;
+		}
+
+		&__link {
+			display: block;
+
+			.__elem {
+				width: 100%;
+			}
+		}
+	}
+
+	&-right {
+	}
+
+	&-nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90px;
+
+		@include g.smMax {
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			padding: 80px 15px 15px;
+			background: g.$baseColor;
+			opacity: 0;
+			overflow-y: auto;
+			overscroll-behavior-y: contain;
+			pointer-events: none;
+			@include g.transition;
+			display: block;
+	
+			._gnav-show_ & {
+				z-index: 1;
+				opacity: 1;
+				pointer-events: auto;
+			}
+		}
+	}
+
+	&-menu {
+		@include g.smMax {
+			width: 50px;
+			height: 50px;
+			z-index: 10;
+			cursor: pointer;
+			position: relative;
+			@include g.transition;
+			@include g.radius(50);
+			color: g.$white;
+			background: g.$baseColor;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid g.$baseColor;
+
+			&._active_ {
+				border: 1px solid g.$white;
+			}
+
+			&__inner {
+				position: relative;
+				width: 28px;
+				height: 10px;
+				z-index: 10;
+				cursor: pointer;
+				@include g.transition;
+				margin: 0;
+			}
+			
+			&__item {
+				display: inline-block;
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: g.$white;
+				@include g.radius(2);
+				@include g.transition;
+				
+				&:nth-of-type(1) { top: 0; }
+				&:nth-of-type(2) { bottom: 0; }
+			}
+			&._active_ &__item {
+				&:nth-of-type(1) { transform: translateY(4px) rotate(-315deg); }
+				&:nth-of-type(2) { transform: translateY(-4px) rotate(315deg); } 
+			}
+		}
+	}
+
+	&-btn {
+		@include g.smMax {
+			margin: 30px auto 0;
+		}
+	}
+}

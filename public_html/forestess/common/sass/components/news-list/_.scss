@@ -1,0 +1,45 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.c-news-list {
+	margin: 0 0 40px;
+	border-top: 1px solid g.$line-gray;
+	
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 15px 0;
+		border-bottom: 1px solid g.$line-gray;
+
+		@include g.smMax {
+			flex-wrap: wrap;
+			padding: 15px 0;
+		}
+	}
+	&__date {
+		flex: 0 0 auto;
+		margin: 0 20px 0 0;
+
+		@include g.smMax {
+			margin: 0 10px 0 0;
+			font-size: g.$fz-xxs;
+		}
+	}
+	&__label {
+		flex: 0 0 auto;
+		margin: 0 20px 0 0;
+		padding: 5px 10px;
+		background: g.$baseColor;
+		color: g.$white;
+		font-size: g.$fz-xxs;
+		line-height: 1.2;
+		@include g.radius(3);
+	}
+	&__link {
+		flex: 1 1 auto;
+
+		@include g.smMax {
+			width: 100%;
+			margin: 10px 0 0;
+		}
+	}
+}

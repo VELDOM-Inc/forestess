@@ -1,0 +1,33 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.e-h2 {
+	margin: 0 0 75px;
+	color: g.$text-black;
+	font-size: 6.0rem;
+	line-height: 1.4;
+	@include g.font-bold;
+	position: relative;
+	padding: 50px 0 0;
+
+	@include g.smMax {
+		margin: 0 0 20px;
+		padding: 30px 0 0;
+		font-size: 3.6rem;
+	}
+
+	&::before {
+		position: absolute;
+		content: attr(data-en);
+		top: 0;
+		left: 0;
+		font-size: 2.6rem;
+		color: g.$baseColor;
+		@include g.font-bold;
+		@include g.font-en;
+		font-weight: 500;
+
+		@include g.smMax {
+			font-size: g.$fz-l;
+		}
+	}
+}

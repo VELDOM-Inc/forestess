@@ -1,0 +1,245 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>テンプレート：左右回り込み</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="robots" content="noindex, nofollow">
+		<!--============================================== html_head -->
+		<!--#include virtual="/ikeda/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+		<style type="text/css">
+			.pre {
+				width: 100%;
+				max-width: 1200px;
+				margin: 40px 0 80px;
+				padding: 15px;
+				border: 3px double #ddd;
+				font-size: 11px;
+				overflow-x: auto;
+			}
+		</style>		
+	</head>
+
+	<body>
+		<div class="t-wrap">
+			<!--============================================== header -->
+			<!--#include virtual="/ikeda/common/inc/header.html" -->
+			<!--============================================== /header -->
+
+			<!-- .e-h1 -->
+			<div class="e-h1">
+				<div class="e-h1__inner">
+					<!-- .c-breadcrumb -->
+					<nav class="c-breadcrumb inview fadeup">
+						<ul class="c-breadcrumb__inner">
+							<li class="c-breadcrumb__item"><a href="/ikeda/" class="c-breadcrumb__link">TOP</a></li>
+							<li class="c-breadcrumb__item">テンプレート</li>
+							<li class="c-breadcrumb__item">左右回り込み</li>
+						</ul>
+					</nav>
+					<!-- /.c-breadcrumb -->
+					<div class="e-h1__ttl inview fadeup">
+						<h1 class="__jp">左右回り込み</h1>
+						<span class="__en">Flex &amp; Flort</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.e-h1 -->		
+			
+			<!-- .l-contents -->
+			<div class="l-contents">
+				<!-- .l-contents__inner -->
+				<div class="l-contents__inner">
+					<!--============================================== template-nav -->
+					<!--#include virtual="/ikeda/template/template-nav.html" -->
+					<!--============================================== /template-nav -->
+
+				<h2 class="e-h2" data-en="Flex">flex boxによる回り込み</h2>
+				<h3 class="e-h3">
+					class="c-flex _left_"<br>
+					class="c-flex _right_"
+				</h3>
+				<div class="c-flex _left_ u-mb-m">
+					<div class="c-flex__item">
+						<img loading="lazy" src="https://placehold.jp/300x200.png" alt="">
+					</div>
+					<div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</div>
+				</div>
+				<div class="c-flex _right_">
+					<div class="c-flex__item">
+						<img loading="lazy" src="https://placehold.jp/300x200.png" alt="">
+					</div>
+					<div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</div>
+				</div>
+				<div class="pre">
+					<pre><code>&lt;div class="c-flex _left_"&gt;
+	&lt;div class="c-flex__item"&gt;
+		&lt;img loading="lazy" src="https://placehold.jp/300x200.png" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div&gt;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="c-flex _right_"&gt;
+	&lt;div class="c-flex__item"&gt;
+		&lt;img loading="lazy" src="https://placehold.jp/300x200.png" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div&gt;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+
+				<h3 class="e-h3">
+					class="c-flex _left_ _sm-fd-c_"<br>
+					class="c-flex _right_ _sm-fd-c_"<br>
+					（スマホ：flex-direction: column; ）
+				</h3>
+				<div class="c-flex _left_ _sm-fd-c_ u-mb-m">
+					<div class="c-flex__item">
+						<img loading="lazy" src="https://placehold.jp/300x200.png" alt="">
+					</div>
+					<div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</div>
+				</div>
+				<div class="c-flex _right_ _sm-fd-c_">
+					<div class="c-flex__item">
+						<img loading="lazy" src="https://placehold.jp/300x200.png" alt="">
+					</div>
+					<div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</div>
+				</div>
+				<div class="pre">
+					<pre><code>&lt;div class="c-flex _left_ _sm-fd-c_"&gt;
+	&lt;div class="c-flex__item"&gt;
+		&lt;img loading="lazy" src="https://placehold.jp/300x200.png" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div&gt;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="c-flex _right_ _sm-fd-c_"&gt;
+	&lt;div class="c-flex__item"&gt;
+		&lt;img loading="lazy" src="https://placehold.jp/300x200.png" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div&gt;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+
+				<h3 class="e-h3">
+					class="c-flex _left_ _sm-fd-cr_"<br>
+					class="c-flex _right_ _sm-fd-cr_"<br>
+					（スマホ：flex-direction: column-reverse;）
+				</h3>
+				<div class="c-flex _left_ _sm-fd-cr_ u-mb-m">
+					<div class="c-flex__item">
+						<img loading="lazy" src="https://placehold.jp/300x200.png" alt="">
+					</div>
+					<div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</div>
+				</div>
+				<div class="c-flex _right_ _sm-fd-cr_">
+					<div class="c-flex__item">
+						<img loading="lazy" src="https://placehold.jp/300x200.png" alt="">
+					</div>
+					<div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</div>
+				</div>
+				<div class="pre">
+					<pre><code>&lt;div class="c-flex _left_ _sm-fd-cr_"&gt;
+	&lt;div class="c-flex__item"&gt;
+		&lt;img loading="lazy" src="https://placehold.jp/300x200.png" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div&gt;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="c-flex _right_ _sm-fd-cr_"&gt;
+	&lt;div class="c-flex__item"&gt;
+		&lt;img loading="lazy" src="https://placehold.jp/300x200.png" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div&gt;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+
+
+				<h2 class="e-h2" data-en="Float">floatによる回り込み</h2>
+				<h3 class="e-h3">
+					class="c-float _left_"<br>
+					class="c-float _right_"
+				</h3>
+				<div class="c-float _left_ u-mb-m">
+					<div class="c-float__item">
+						<img loading="lazy" src="https://placehold.jp/300x200.png" alt="">
+					</div>
+					<div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</div>
+				</div>
+				<div class="c-float _right_">
+					<div class="c-float__item">
+						<img loading="lazy" src="https://placehold.jp/300x200.png" alt="">
+					</div>
+					<div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</div>
+				</div>
+				<div class="pre">
+					<pre><code>&lt;div class="c-float _left_"&gt;
+	&lt;div class="c-float__item"&gt;
+		&lt;img loading="lazy" src="https://placehold.jp/300x200.png" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div&gt;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="c-float _right_"&gt;
+	&lt;div class="c-float__item"&gt;
+		&lt;img loading="lazy" src="https://placehold.jp/300x200.png" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div&gt;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+
+				<h3 class="e-h3">
+					class="c-float _left_ _sm-col1_"<br>
+					class="c-float _right_ _sm-col1_"<br>
+					（スマホ表示回り込みなし）
+				</h3>
+				<div class="c-float _left_ _sm-col1_ u-mb-m">
+					<div class="c-float__item">
+						<img loading="lazy" src="https://placehold.jp/300x200.png" alt="">
+					</div>
+					<div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</div>
+				</div>
+				<div class="c-float _right_ _sm-col1_">
+					<div class="c-float__item">
+						<img loading="lazy" src="https://placehold.jp/300x200.png" alt="">
+					</div>
+					<div>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</div>
+				</div>
+				<div class="pre">
+					<pre><code>&lt;div class="c-float _left_ _sm-col1_"&gt;
+	&lt;div class="c-float__item"&gt;
+		&lt;img loading="lazy" src="https://placehold.jp/300x200.png" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div&gt;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="c-float _right_ _sm-col1_"&gt;
+	&lt;div class="c-float__item"&gt;
+		&lt;img loading="lazy" src="https://placehold.jp/300x200.png" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div&gt;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+
+
+				</div>
+				<!-- /.l-contents__inner -->
+				
+				<!--============================================== c-contact-bottom -->
+				<!--#include virtual="/ikeda/common/inc/c-contact-bottom.html" -->
+				<!--============================================== /c-contact-bottom -->
+			</div>
+			<!-- /.l-contents -->
+
+			<!--============================================== footer -->
+			<!--#include virtual="/ikeda/common/inc/footer.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/ikeda/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+	</body>
+</html>

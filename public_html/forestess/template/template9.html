@@ -1,0 +1,164 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>テンプレート：フォーム関連</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="robots" content="noindex, nofollow">
+		<!--============================================== html_head -->
+		<!--#include virtual="/ikeda/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+		<style type="text/css">
+			.pre {
+				width: 100%;
+				max-width: 1200px;
+				margin: 40px 0 80px;
+				padding: 15px;
+				border: 3px double #ddd;
+				font-size: 11px;
+				overflow-x: auto;
+			}
+		</style>		
+	</head>
+
+	<body>
+		<div class="t-wrap">
+			<!--============================================== header -->
+			<!--#include virtual="/ikeda/common/inc/header.html" -->
+			<!--============================================== /header -->
+
+			<!-- .e-h1 -->
+			<div class="e-h1">
+				<div class="e-h1__inner">
+					<!-- .c-breadcrumb -->
+					<nav class="c-breadcrumb inview fadeup">
+						<ul class="c-breadcrumb__inner">
+							<li class="c-breadcrumb__item"><a href="/ikeda/" class="c-breadcrumb__link">TOP</a></li>
+							<li class="c-breadcrumb__item">テンプレート</li>
+							<li class="c-breadcrumb__item">フォーム関連</li>
+						</ul>
+					</nav>
+					<!-- /.c-breadcrumb -->
+					<div class="e-h1__ttl inview fadeup">
+						<h1 class="__jp">フォーム関連</h1>
+						<span class="__en">Form</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.e-h1 -->						
+
+			<!-- .l-contents -->
+			<div class="l-contents">
+				<!-- .l-contents__inner -->
+				<div class="l-contents__inner">
+					<!--============================================== template-nav -->
+					<!--#include virtual="/ikeda/template/template-nav.html" -->
+					<!--============================================== /template-nav -->
+				
+				<h2 class="e-h2" data-en="Input">input</h2>
+				<div class="u-mb-xxxs"><input type="text" class="e-form-text" name="" value=""></div>
+				<div class="u-mb-xxxs"><input type="text" class="e-form-text _w-m_" name="" value=""></div>
+				<div class="u-mb-xxxs"><input type="text" class="e-form-text _w-s_" name="" value=""></div>
+				<div class="pre">
+					<pre><code>&lt;input type="text" class="e-form-text" name="" value=""&gt;
+&lt;input type="text" class="e-form-text _w-m_" name="" value=""&gt;
+&lt;input type="text" class="e-form-text _w-s_" name="" value=""&gt;</code></pre>
+				</div>
+				
+				<div class="u-mb-xxxs"><input type="tel" class="e-form-text" name="" value="" placeholder="type=tel"></div>
+				<div class="u-mb-xxxs"><input type="email" class="e-form-text" name="" value="" placeholder="type=email"></div>
+				<div class="u-mb-xxxs"><input type="number" class="e-form-text" name="" value="" placeholder="type=number"></div>
+				<div class="u-mb-xxxs"><input type="password" class="e-form-text" name="" value="" placeholder="type=password"></div>
+				<div class="u-mb-xxxs"><input type="date" class="e-form-text" name="" value=""></div>
+				<div class="pre">
+					<pre><code>&lt;input type="tel" class="e-form-text" name="" value="" placeholder="type=tel"&gt;
+&lt;input type="email" class="e-form-text" name="" value="" placeholder="type=email"&gt;
+&lt;input type="number" class="e-form-text" name="" value="" placeholder="type=number"&gt;
+&lt;input type="password" class="e-form-text" name="" value="" placeholder="type=password"&gt;
+&lt;input type="date" class="e-form-text" name="" value=""&gt;</code></pre>
+				</div>
+				
+				<h2 class="e-h2" data-en="Textarea">テキストエリア</h2>
+				<textarea name="" cols="30" rows="10" class="e-form-textarea"></textarea>
+				<div class="pre">
+					<pre><code>&lt;textarea name="" cols="30" rows="10" class="e-form-textarea"&gt;&lt;/textarea&gt;</code></pre>
+				</div>
+				
+				<h2 class="e-h2" data-en="Select Box">セレクトボックス</h2>
+				<select class="e-form-select" name="">
+					<option value="">セレクトボックス</option>
+					<option value="">セレクトボックス</option>
+					<option value="">セレクトボックス</option>
+				</select>
+				<div class="pre">
+					<pre><code>&lt;select class="e-form-select" name=""&gt;
+	&lt;option value=""&gt;セレクトボックス&lt;/option&gt;
+	&lt;option value=""&gt;セレクトボックス&lt;/option&gt;
+	&lt;option value=""&gt;セレクトボックス&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+				</div>
+				
+				
+				<h2 class="e-h2" data-en="Check Box">チェックボックス</h2>
+				<label class="e-form-check u-mr-xxs">
+					<input type="checkbox" name="" id="" class="__elem">
+					<span class="__txt">チェックボックス</span>
+				</label>
+				<label class="e-form-check u-mr-xxs">
+					<input type="checkbox" name="" id="" class="__elem">
+					<span class="__txt">チェックボックス</span>
+				</label>
+				<div class="pre">
+					<pre><code>&lt;label class="e-form-check u-mr-xxs"&gt;
+	&lt;input type="checkbox" name="" id="" class="__elem"&gt;
+	&lt;span class="__txt"&gt;チェックボックス&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="e-form-check u-mr-xxs"&gt;
+	&lt;input type="checkbox" name="" id="" class="__elem"&gt;
+	&lt;span class="__txt"&gt;チェックボックス&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+				</div>
+				
+				<h2 class="e-h2" data-en="Radio Button">ラジオボタン</h2>
+				<label class="e-form-radio u-mr-xxs">
+					<input type="radio" name="" id="" class="__elem">
+					<span class="__txt">ラジオボタン</span>
+				</label>
+				<label class="e-form-radio u-mr-xxs">
+					<input type="radio" name="" id="" class="__elem">
+					<span class="__txt">ラジオボタン</span>
+				</label>
+				<div class="pre">
+					<pre><code>&lt;label class="e-form-radio u-mr-xxs"&gt;
+	&lt;input type="radio" name="" id="" class="__elem"&gt;
+	&lt;span class="__txt"&gt;ラジオボタン&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="e-form-radio u-mr-xxs"&gt;
+	&lt;input type="radio" name="" id="" class="__elem"&gt;
+	&lt;span class="__txt"&gt;ラジオボタン&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+				</div>
+
+
+
+				</div>
+				<!-- /.l-contents__inner -->
+				
+				<!--============================================== c-contact-bottom -->
+				<!--#include virtual="/ikeda/common/inc/c-contact-bottom.html" -->
+				<!--============================================== /c-contact-bottom -->
+			</div>
+			<!-- /.l-contents -->
+
+			<!--============================================== footer -->
+			<!--#include virtual="/ikeda/common/inc/footer.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/ikeda/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+	</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "utf-8";
+@use "../../../global/_" as g;
+.e-form-text {
+	display: inline-block;
+	width: 100%;
+	padding: 10px 20px;
+	background: g.$bg-gray;
+	border: none;
+	color: g.$text-black;
+	@include g.radius(5);
+	font-size: 1.7rem;
+	@include g.font-normal;
+	
+	&._w-m_ {
+		max-width: 420px;
+	}
+	&._w-s_ {
+		max-width: 260px;
+	}
+	&._w-a_ {
+		width: auto;
+	}
+
+	&::placeholder ,
+	&::-moz-placeholder ,
+	&:-ms-input-placeholder ,
+	&::-webkit-input-placeholder {
+		color: #B0B0B0;
+		opacity: 1;
+	}
+}

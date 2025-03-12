@@ -1,0 +1,172 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.e-btn-arrow {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	min-width: 300px;
+	height: 65px;
+	margin: 10px 5px;
+	padding: 0 40px;
+	background: g.$baseColor;
+	border: 1px solid transparent;
+	color: g.$white;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1.4;
+	@include g.transition;
+	@include g.radius(50);
+	font-size: g.$fz-xl;
+	font-weight: 700;
+
+	@include g.smMax {
+		height: 55px;
+		font-size: g.$fz-l;
+		margin: 5px;
+		min-width: auto;
+		width: 100%;
+	}
+	&:not(._disabled_) {
+		cursor: pointer;
+
+		@include g.hover {
+			background: g.$white;
+			border-color: g.$baseColor;
+			color: g.$baseColor;
+		}
+	}
+	&::after {
+		font-family: 'icomoon';
+		@include g.centering-elements(false, true);
+		right: 15px;
+		font-size: g.$fz-l;
+		font-weight: 300;
+
+		@include g.smMax {
+			font-size: g.$fz-s;
+		}
+	}
+
+	&._disabled_ {
+		opacity: .5;
+	}
+	&._m0_ {
+		margin: 0 !important;
+	}
+	.__txt {
+		background: none;
+	}
+	&._arrow-right_ {
+		&::after {
+			content: "\e900";
+		}
+	}
+	&._arrow-left_ {
+		&::after {
+			content: "\e907";
+			right: auto;
+			left: 15px;
+		}
+	}
+	&._anker_ {
+		&::after {
+			content: "\e909";
+		}
+	}
+	&._map_ {
+		&::after {
+			content: "\e906";
+		}
+	}
+
+	/* 文字が一文字ずつ表示される */
+	.text-wrap {
+		position: relative;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	.after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+
+		span {
+			line-height: 1.2;
+			transition: color .3s ease-out;
+			transform: translateY(100%);
+		}
+	}
+
+	.before {
+		display: flex;
+		align-items: center;
+
+		span {
+			line-height: 1.2;
+			transition: color .3s ease-out;
+		}
+	}
+
+	//サイズオプション Lサイズ-------------------------------
+	&._w-l_ {
+		min-width: 380px;
+		height: 90px;
+		font-size: g.$fz-xxl;
+
+		@include g.smMax {
+			width: 100%;
+			min-width: 0;
+			height: 65px;
+			font-size: g.$fz-l;
+		}
+	}
+
+	//サイズオプション Sサイズ-------------------------------
+	&._w-s_ {
+		min-width: 180px;
+		height: 45px;
+		font-size: 1.9rem;
+
+		@include g.smMax {
+			min-width: 0;
+			font-size: g.$fz-l;
+			width: 100%;
+			height: 50px;
+		}
+	}
+
+	//カラーオプション -------------------------------
+	&._yellow_ {
+		background: g.$yellow;
+		border: 1px solid g.$yellow;
+		color: g.$text-black;
+
+		&:not(._disabled_) {
+			@include g.hover {
+				border: 1px solid #F2C925;
+				background: #F2C925;
+				color: g.$text-black;
+			}
+		}
+	}
+
+	&._gray_ {
+		background: #eee;
+		color: #5E5E5E;
+		border: 1px solid #eee;
+
+		&:not(._disabled_) {
+			@include g.hover {
+				background: #D0D0D0;
+				border: 1px solid #D0D0D0;
+				color: #5E5E5E;
+			}
+		}
+	}
+}

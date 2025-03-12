@@ -1,0 +1,413 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.c-company {
+	&-message {
+		.c-wave__inner {
+			bottom: 100px;
+
+			&::before {
+				animation: img-wrap 1.5s cubic-bezier(0.4, 0, 0.2, 1) 1s forwards;
+			}
+		}
+	}
+
+	&-ceo {
+		margin: 100px auto;
+		max-width: 1260px;
+		padding: 0 30px 90px;
+		position: relative;
+		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@include g.smMax {
+			flex-direction: column;
+			margin: 40px auto 50px;
+			padding: 0 15px;
+		}
+
+		&__left {
+			width: 58.33%;
+
+			@include g.smMax {
+				width: 100%;
+				margin: 0 0 40px;
+			}
+		}
+
+		&__right {
+			width: calc((100% - 58.33%) - 100px);
+			padding: 60px 0 0;
+
+			@include g.smMax {
+				padding: 0;
+				width: 60%;
+				margin: 0 auto;
+			}
+
+			.__elem {
+				border-radius: 20px;
+
+				@include g.smMax {
+					border-radius: 10px;
+				}
+			}
+		}
+
+		&__txt {
+			margin: 0 0 70px;
+
+			@include g.smMax {
+				margin: 0 0 30px;
+			}
+		}
+
+		&__name {
+			text-align: right;
+			flex-direction: column;
+
+			.__txt {
+				margin: 0 0 10px;
+			}
+
+			.__name {
+				width: 190px;
+				margin: 0 0 0 auto;
+
+				@include g.smMax {
+					width: 130px;
+				}
+			}
+		}
+	}
+
+	&-gray {
+		background: g.$bg-gray;
+		padding: 185px 30px 190px;
+
+		@media only screen and (min-width: 768px) and (max-width: 1160px) {
+			padding: 90px 30px 100px;
+		}
+
+		@include g.smMax {
+			padding: 45px 15px 50px;
+		}
+	}
+
+	&-outline {
+		margin: 0 auto 100px;
+		max-width: 1200px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@media only screen and (min-width: 768px) and (max-width: 1160px) {
+			flex-direction: column;
+		}
+
+		@include g.smMax {
+			flex-direction: column;
+			margin: 0 auto 50px;
+		}
+
+		.e-h2 {
+			width: calc((100% - 66.67%) - 100px);
+
+			@media only screen and (min-width: 768px) and (max-width: 1160px) {
+				width: 100%;
+			}
+
+			@include g.smMax {
+				width: 100%;
+			}
+		}
+
+		&__right {
+			width: 66.67%;
+			padding: 65px 0 0;
+
+			@media only screen and (min-width: 768px) and (max-width: 1160px) {
+				width: 100%;
+				padding: 0;
+			}
+
+			@include g.smMax {
+				width: 100%;
+				padding: 0;
+			}
+
+			.m-table {
+				th {
+					width: 25%;
+
+					@include g.smMax {
+						width: 100%;
+					}
+				}
+			}
+		}		
+	}
+
+	&-access {
+		margin: 0 auto;
+		max-width: 1200px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@media only screen and (min-width: 768px) and (max-width: 1160px) {
+			flex-direction: column;
+		}
+
+		@include g.smMax {
+			flex-direction: column;
+			margin: 0 auto;
+		}
+
+		.e-h2 {
+			width: calc((100% - 66.67%) - 100px);
+
+			@media only screen and (min-width: 768px) and (max-width: 1160px) {
+				width: 100%;
+			}
+
+			@include g.smMax {
+				width: 100%;
+			}
+		}
+
+		&__right {
+			width: 66.67%;
+			padding: 65px 0 0;
+
+			@media only screen and (min-width: 768px) and (max-width: 1160px) {
+				width: 100%;
+				padding: 0;
+			}
+
+			@include g.smMax {
+				width: 100%;
+				padding: 0;
+			}
+
+			.e-iframe {
+				border-radius: 20px;
+				margin: 0 0 50px;
+
+				@include g.smMax {
+					border-radius: 10px;
+					margin: 0 0 25px;
+				}
+			}
+		}
+
+		&__map {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			@include g.smMax {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		&__txt {
+			@include g.smMax {
+				margin: 0 0 20px;
+			}
+		}
+	}
+
+	&-history {
+		padding: 180px 0 0;
+
+		@include g.smMax {
+			padding: 60px 0 0;
+		}
+		
+		&__inner {
+			margin: 0 auto 85px;
+			max-width: 1260px;
+			padding: 0 30px;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+
+			@include g.smMax {
+				padding: 0 15px;
+				margin: 0 auto 30px;
+			}
+
+			.e-h2 {
+				margin: 0;
+			}
+		}
+
+		&__btn {
+			.arrow-box {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				position: relative;
+
+				.prev-arrow ,
+				.next-arrow {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 60px;
+					height: 60px;
+					background: g.$white;
+					border: 1px solid g.$baseColor;
+					transition: all .3s ease;
+					cursor: pointer;
+					color: g.$baseColor;
+					z-index: 2;
+					@include g.radius(50);
+					font-size: 2.3rem;
+
+					@include g.smMax {
+						width: 45px;
+						height: 45px;
+						font-size: 1.9rem;
+					}
+
+					@include g.hover {
+						background: g.$baseColor;
+						color: g.$white;
+					}
+				}
+
+				.prev-arrow {
+					margin: 0 20px 0 0;
+
+					@include g.smMax {
+						margin: 0 10px 0 0;
+					}
+				}
+								
+				.prev-arrow .__ico ,
+				.next-arrow .__ico {
+					position: relative;
+					z-index: 2;
+				}
+
+				.slick-disabled {
+					opacity: .5;
+				}
+			}
+		}
+
+		&-slider {
+			position: relative;
+			max-width: 1585px;
+			margin: 0 0 0 auto;
+			padding: 0 0 0 35px;
+			overflow: hidden;
+
+			@include g.smMax {
+				padding: 0 0 0 15px;
+			}
+
+			.slick-list {
+				padding: 7px 0 0;
+				overflow: visible;
+			}
+
+			.slick-track {
+				border-top: 1px solid g.$line-gray;
+			}
+
+			&__item {
+				margin: 40px 40px 0 0;
+				padding: 50px 35px;
+				border-radius: 15px;
+				background: g.$bg-blue2;
+
+				@include g.smMax {
+					margin: 40px 20px 0 0;
+					padding: 25px 15px;
+				}
+
+				&:nth-child(2n) {
+					background: g.$bg-gray;
+				}
+			}
+
+			&__date {
+				position: relative;
+				margin: 0 0 35px;
+
+				@include g.smMax {
+					margin: 0 0 15px;
+				}
+
+				&::before {
+					content: "";
+					position: absolute;
+					top: -98px;
+					left: 10px;
+					width: 15px;
+					height: 15px;
+					background: g.$baseColor;
+					@include g.radius(15);
+
+					@include g.smMax {
+						top: -73px;
+					}
+				}
+
+				&::after {
+					position: absolute;
+					content: "";
+					top: -90px;
+					left: 17px;
+					width: 0;
+					height: 40px;
+					border-left: 1px dotted g.$baseColor;
+
+					@include g.smMax {
+						top: -65px;
+					}
+				}
+
+				.__year {
+					font-size: 5.0rem;
+					font-weight: 700;
+					color: g.$baseColor;
+					@include g.font-en;
+					margin: 0 0 10px;
+					line-height: 1.0;
+
+					@include g.smMax {
+						font-size: 3.4rem;
+					}
+				}
+			}
+
+			&__box {
+				margin: 0 0 20px;
+				display: flex;
+
+				@include g.smMax {
+					margin: 0 0 10px;
+				}
+
+				&:last-child {
+					margin: 0;
+				}
+
+				.__month {
+					width: 30%;
+				}
+
+				.__txt {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
