@@ -98,15 +98,15 @@
 //  font 
 // ============================================================
 @mixin font-normal {
-	font-family: "Zen Kaku Gothic New", sans-serif;
-	font-weight: 500;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
 }
 @mixin font-bold {
-	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 700;
 }
 @mixin font-en {
-	font-family: "Plus Jakarta Sans", sans-serif;
+	font-family: "Prompt", sans-serif;
 }
 @mixin font-icon {
 	font-family: 'icomoon';

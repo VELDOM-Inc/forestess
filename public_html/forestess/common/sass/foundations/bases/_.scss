@@ -2,19 +2,27 @@
 @use "../../global/_" as g;
 
 html {
-	@include g.smMin {
-		overflow-y: scroll;
-	}
 	@include g.smBtMd {
 		font-size: calc(100vw / 102.4);
 	}
 }
 body {
 	@include g.font-normal;
+	-webkit-text-size-adjust: none;
+	
+	&._gnav-show_ {
+		overflow-y: hidden;
+		height: 100%;
+
+		.l-header-nav {
+			display: none;
+		}
+	}
 }
 a {
 	color: g.$baseColor;
 	text-decoration: none;
+	@include g.transition;
 	
 	@include g.hover {
 		.__txt {
@@ -49,7 +57,7 @@ a {
 }
 
 .link-opacity {
-	transition: all .4s;
+	@include g.transition;
 
 	@include g.hover {
 		@include g.opacity;
@@ -57,7 +65,7 @@ a {
 }
 
 .link-underline {
-	transition: all .4s;
+	@include g.transition;
 	position: relative;
 	font-weight: 700;
 
@@ -165,12 +173,5 @@ input[type="submit"] {
 	select,
 	textarea {
 		font-size: g.$fz-m !important;
-	}
-	
-	body {
-		&._gnav-show_ {
-			overflow-y: hidden;
-			height: 100%;
-		}
 	}
 }

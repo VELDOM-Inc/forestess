@@ -11,7 +11,7 @@ require_once("./src/bootstrap.php");
 		<meta charset="utf-8">
 		<title>お問い合わせ｜株式会社フォレステス｜安心・信頼・品質につながる技術力を追求</title>
 		<meta name="description" content="お問い合わせのページです。は、福岡市を拠点に冷媒フロン類回収工事と重量物工事を中心に事業展開を行っております。">
-		<meta name="keywords" content="">
+		<meta name="keywords" content="冷媒フロン,フォレステス,福岡,forestess,重量物">
 		<meta property="og:title" content="お問い合わせ｜株式会社フォレステス｜安心・信頼・品質につながる技術力を追求">
 		<meta property="og:description" content="お問い合わせのページです。は、福岡市を拠点に冷媒フロン類回収工事と重量物工事を中心に事業展開を行っております。">
 		<meta property="og:type" content="article">

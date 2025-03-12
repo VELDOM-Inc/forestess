@@ -2,9 +2,9 @@
 @use "../../global/_" as g;
 .t-wrap {
 	color: g.$text-black;
-	font-size: 1.7rem;
-	line-height: 1.8;
-	position: relative;
+	font-size: 1.6rem;
+	line-height: 200%;
+	letter-spacing: 0.8px;
 	overflow: hidden;
 
 	@include g.smMax {

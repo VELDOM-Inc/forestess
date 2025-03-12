@@ -78,7 +78,7 @@ $(function() {
 	
 		$win.on('load scroll', function() {
 			var value = $(this).scrollTop();
-			if ( value > 1 ) {
+			if ( value > 100 ) {
 				$header.addClass(animationClass);
 			} else {
 				$header.removeClass(animationClass);
@@ -103,54 +103,4 @@ if (!isMobile) {
   });
 }
 
-// ボタン
-/* spanタグに分割 */
-let splitTarget = document.querySelectorAll('.js-splitText');//ターゲットとなる要素を全取得
-splitTarget.forEach((target) => {// target = ターゲット
-    if(!target.classList.contains('is-active')){//ターゲットが'is-active'クラスを持っていない場合
-        newText = '';//生成する要素を格納するための変数
-        spanText = target.innerHTML;//ターゲットの中身を取得
-        spanText.split('').forEach((char) => {// char = character 文字
-            newText += '<span class="__txt">' + char + '</span>';//一文字ずつspanタグで囲む
-        });
-        newTextBefore = "<div class='before'>"+newText+"</div>";//beforeクラスをつけた要素を生成
-        newTextAfter = "<div class='after'>"+newText+"</div>";//afterクラスをつけた要素を生成
-        newText = "<span class='text-wrap'>"+newTextBefore + newTextAfter+"</span>";//before after両要素を囲む要素生成
-        target.innerHTML = newText;//ターゲットに生成した要素を挿入
-    }
-});
 
-/* ターゲットにホバーした時の動き */
-splitTarget.forEach((target)=>{
-    if(!target.classList.contains('is-active')){//ターゲットが'is-active'クラスを持っていない場合
-        let beforeSpan = target.querySelector('.before').querySelectorAll('span');//beforeの中にあるspanタグを全取得
-        let afterSpan = target.querySelector('.after').querySelectorAll('span');//afterの中にあるspanタグを全取得
-        target.addEventListener('mouseenter',()=>{//ホバーしたとき
-            gsap.to(beforeSpan,{y:'-100%',stagger:.02,ease:"power2.out"})//0.03秒おきに各spanタグをy軸上に移動
-            gsap.to(afterSpan,{y:'0%',stagger:.02,ease:"power2.out"})
-        })
-        target.addEventListener('mouseleave',()=>{//ホバーが外れたとき
-            gsap.to(beforeSpan,{y:'0%',stagger:.02,ease:"power2.out"})
-            gsap.to(afterSpan,{y:'100%',stagger:.02,ease:"power2.out"})
-        })
-    }
-});
-
-jQuery(function($) {
-$(window).on('load scroll', function (){
-
-  var box = $('.inview');
-  var animated = 'active';
-  
-  box.each(function(){
-  
-    var boxOffset = $(this).offset().top;
-    var scrollPos = $(window).scrollTop();
-    var wh = $(window).height();
-
-    if(scrollPos > boxOffset - wh + 100 ){
-      $(this).addClass(animated);
-    }
-  });
-});
-});
