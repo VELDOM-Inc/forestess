@@ -2,32 +2,32 @@
 <html prefix="og: http://ogp.me/ns#" lang="ja">
 	<head>
 		<!--============================================== html_head_above -->
-		<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/html_head_above.html'; ?>
+		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/html_head_above.html'; ?>
 		<!--============================================== /html_head_above -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
-		<title>送信完了画面：お問い合わせ｜株式会社池田開発｜環境を守る、最前線</title>
-		<meta name="description" content="お問い合わせのページです。は、福岡県と佐賀県を事業エリアとして産業廃棄物収集運搬・処分を行っています。">
-		<meta name="keywords" content="池田開発,福岡,佐賀,産業廃棄物,収集,運搬,処分">
-		<meta property="og:title" content="お問い合わせ｜株式会社池田開発｜環境を守る、最前線">
-		<meta property="og:description" content="お問い合わせのページです。は、福岡県と佐賀県を事業エリアとして産業廃棄物収集運搬・処分を行っています。">
+		<title>送信完了画面：お問い合わせ｜株式会社フォレステス｜安心・信頼・品質につながる技術力を追求</title>
+		<meta name="description" content="お問い合わせのページです。は、福岡市を拠点に冷媒フロン類回収工事と重量物工事を中心に事業展開を行っております。">
+		<meta name="keywords" content="">
+		<meta property="og:title" content="お問い合わせ｜株式会社フォレステス｜安心・信頼・品質につながる技術力を追求">
+		<meta property="og:description" content="お問い合わせのページです。は、福岡市を拠点に冷媒フロン類回収工事と重量物工事を中心に事業展開を行っております。">
 		<meta property="og:type" content="article">
-		<meta property="og:url" content="https://ikeda-kaihatsu.jp/contact/">
-		<meta property="og:image" content="https://ikeda-kaihatsu.jp/common/img/common/og_image.png">
-		<meta property="og:image:alt" content="株式会社池田開発">
+		<meta property="og:url" content="https://xxxx.com/contact/">
+		<meta property="og:image" content="https://xxxx.com/common/img/common/og_image.png">
+		<meta property="og:image:alt" content="株式会社フォレステス">
 		<!--============================================== html_head -->
-		<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/html_head.html'; ?>
+		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/html_head.html'; ?>
 		<!--============================================== /html_head -->
 	</head>
 
 	<body>
 		<!--============================================== body_head -->
-		<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/body_head.html'; ?>
+		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/body_head.html'; ?>
 		<!--============================================== /body_head -->
 				
 		<div class="t-wrap">
 			<!--============================================== header -->
-			<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/header.html'; ?>
+			<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/header.html'; ?>
 			<!--============================================== /header -->
 			
 			<!-- .e-h1 -->
@@ -36,8 +36,8 @@
 					<!-- .c-breadcrumb -->
 					<nav class="c-breadcrumb">
 						<ul class="c-breadcrumb__inner">
-							<li class="c-breadcrumb__item"><a href="/ikeda/" class="c-breadcrumb__link">TOP</a></li>
-							<li class="c-breadcrumb__item"><a href="/ikeda/contact/" class="c-breadcrumb__link">お問い合わせ</a></li>
+							<li class="c-breadcrumb__item"><a href="/forestess/" class="c-breadcrumb__link">TOP</a></li>
+							<li class="c-breadcrumb__item"><a href="/forestess/contact/" class="c-breadcrumb__link">お問い合わせ</a></li>
 							<li class="c-breadcrumb__item">送信完了</li>
 						</ul>
 					</nav>
@@ -61,7 +61,7 @@
 							改めて担当者よりご連絡をさせていただきます。</p>
 
 						<div class="u-al-fc">
-							<a href="/ikeda/" class="e-btn-arrow _m0_ js-splitText _arrow-right_">
+							<a href="/forestess/" class="e-btn-arrow _m0_ js-splitText _arrow-right_">
 								TOPへ
 							</a>
 						</div>
@@ -72,12 +72,12 @@
 			<!-- /.l-contents -->
 			
 			<!--============================================== footer -->
-			<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/footer.html'; ?>
+			<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/footer.html'; ?>
 			<!--============================================== /footer -->
 		</div>
 
 		<!--============================================== html_foot -->
-		<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/html_foot.html'; ?>
+		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/html_foot.html'; ?>
 		<!--============================================== /html_foot -->
 	</body>
 </html>

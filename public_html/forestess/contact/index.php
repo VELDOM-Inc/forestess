@@ -5,32 +5,32 @@ require_once("./src/bootstrap.php");
 <html prefix="og: http://ogp.me/ns#" lang="ja">
 	<head>
 		<!--============================================== html_head_above -->
-		<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/html_head_above.html'; ?>
+		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/html_head_above.html'; ?>
 		<!--============================================== /html_head_above -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
-		<title>お問い合わせ｜株式会社池田開発｜環境を守る、最前線</title>
-		<meta name="description" content="お問い合わせのページです。は、福岡県と佐賀県を事業エリアとして産業廃棄物収集運搬・処分を行っています。">
-		<meta name="keywords" content="池田開発,福岡,佐賀,産業廃棄物,収集,運搬,処分">
-		<meta property="og:title" content="お問い合わせ｜株式会社池田開発｜環境を守る、最前線">
-		<meta property="og:description" content="お問い合わせのページです。は、福岡県と佐賀県を事業エリアとして産業廃棄物収集運搬・処分を行っています。">
+		<title>お問い合わせ｜株式会社フォレステス｜安心・信頼・品質につながる技術力を追求</title>
+		<meta name="description" content="お問い合わせのページです。は、福岡市を拠点に冷媒フロン類回収工事と重量物工事を中心に事業展開を行っております。">
+		<meta name="keywords" content="">
+		<meta property="og:title" content="お問い合わせ｜株式会社フォレステス｜安心・信頼・品質につながる技術力を追求">
+		<meta property="og:description" content="お問い合わせのページです。は、福岡市を拠点に冷媒フロン類回収工事と重量物工事を中心に事業展開を行っております。">
 		<meta property="og:type" content="article">
-		<meta property="og:url" content="https://ikeda-kaihatsu.jp/contact/">
-		<meta property="og:image" content="https://ikeda-kaihatsu.jp/common/img/common/og_image.png">
-		<meta property="og:image:alt" content="株式会社池田開発">
+		<meta property="og:url" content="https://xxxx.com/contact/">
+		<meta property="og:image" content="https://xxxx.com/common/img/common/og_image.png">
+		<meta property="og:image:alt" content="株式会社フォレステス">
 		<!--============================================== html_head -->
-		<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/html_head.html'; ?>
+		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/html_head.html'; ?>
 		<!--============================================== /html_head -->
 	</head>
 
 	<body>
 		<!--============================================== body_head -->
-		<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/body_head.html'; ?>
+		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/body_head.html'; ?>
 		<!--============================================== /body_head -->
 
 		<div class="t-wrap">
 			<!--============================================== header -->
-			<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/header.html'; ?>
+			<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/header.html'; ?>
 			<!--============================================== /header -->
 			
 			<!-- .e-h1 -->
@@ -39,7 +39,7 @@ require_once("./src/bootstrap.php");
 					<!-- .c-breadcrumb -->
 					<nav class="c-breadcrumb">
 						<ul class="c-breadcrumb__inner">
-							<li class="c-breadcrumb__item"><a href="/ikeda/" class="c-breadcrumb__link">TOP</a></li>
+							<li class="c-breadcrumb__item"><a href="/forestess/" class="c-breadcrumb__link">TOP</a></li>
 							<li class="c-breadcrumb__item">お問い合わせ</li>
 						</ul>
 					</nav>
@@ -105,7 +105,7 @@ require_once("./src/bootstrap.php");
 									<tr>
 										<th class="">会社名 &frasl; 組織名</th>
 										<td class="<?php if ($form->is_error('company')) : ?> error<?php endif; ?>">
-											<input type="text" name="company" class="e-form-text" value="<?php echo e($form->get('company')); ?>" placeholder="例）株式会社池田開発">
+											<input type="text" name="company" class="e-form-text" value="<?php echo e($form->get('company')); ?>" placeholder="例）株式会社フォレステス">
 											<?php echo $form->error('company', '<div class="e-alert">', '</div>'); ?>
 										</td>
 									</tr>
@@ -161,7 +161,7 @@ require_once("./src/bootstrap.php");
 												<input type="checkbox" name="agreement" id="agreement" class="__elem" value="<?php echo $agreement ?>"<?php echo $form->checked('agreement', $agreement) ?>>
 												<span class="__txt"><?php echo $agreement ?></span>
 											</label>	
-											<p class="c-contact-form__txt"><a href="/ikeda/privacy/" class="link-underline">プライバシーポリシーはこちら</a></p>
+											<p class="c-contact-form__txt"><a href="/forestess/privacy/" class="link-underline">プライバシーポリシーはこちら</a></p>
 											<?php endforeach; ?>
 											<?php if($form->error('agreement')) : ?><div class="e-alert">※個人情報取り扱いについてご同意いただけない場合は、ご利用いただけません。</div><?php endif; ?>
 										</td>
@@ -182,12 +182,12 @@ require_once("./src/bootstrap.php");
 			<!-- /.l-contents -->
 			
 			<!--============================================== footer -->
-			<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/footer.html'; ?>
+			<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/footer.html'; ?>
 			<!--============================================== /footer -->
 		</div>
 
 		<!--============================================== html_foot -->
-		<?php include($_SERVER['DOCUMENT_ROOT']).'/ikeda/common/inc/html_foot.html'; ?>
+		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/html_foot.html'; ?>
 		<!--============================================== /html_foot -->
 		<script src="//yubinbango.github.io/yubinbango/yubinbango.js"></script>
 	</body>

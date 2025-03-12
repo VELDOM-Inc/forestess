@@ -3,7 +3,7 @@
 .e-h1 {
 	width: 100%;
 	height: 600px;
-	background: url(/ikeda/common/img/common/bg_ttl.png), linear-gradient(284deg, #FFE066 0%, #87A7C6 27.8%, #154A7D 100%);
+	background: url(/forestess/common/img/common/bg_ttl.png), linear-gradient(284deg, #FFE066 0%, #87A7C6 27.8%, #154A7D 100%);
 	background-size: cover;
 	background-position: bottom center;
 	background-repeat: no-repeat;
@@ -77,14 +77,14 @@
 	}
 
 	&._business_ {
-		background: url(/ikeda/common/img/common/bg_ttl.png), url(/ikeda/common/img/business/bg_ttl_business.jpg);
+		background: url(/forestess/common/img/common/bg_ttl.png), url(/forestess/common/img/business/bg_ttl_business.jpg);
 		background-size: cover, cover;
 		background-position: bottom center, center center;
 		background-repeat: no-repeat, no-repeat;
 	}
 
 	&._company_ {
-		background: url(/ikeda/common/img/common/bg_ttl.png), url(/ikeda/common/img/company/bg_ttl_company.jpg);
+		background: url(/forestess/common/img/common/bg_ttl.png), url(/forestess/common/img/company/bg_ttl_company.jpg);
 		background-size: cover, cover;
 		background-position: bottom center, center center;
 		background-repeat: no-repeat, no-repeat;

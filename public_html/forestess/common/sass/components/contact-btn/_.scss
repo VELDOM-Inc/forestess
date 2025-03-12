@@ -1,8 +1,8 @@
 @charset "utf-8";
 @use "../../global/_" as g;
 .c-contact {
-	&-bottom {
-		background: url(/ikeda/common/img/common/bg_contact.png), linear-gradient(284deg, #FFE066 0%, #87A7C6 18.17%, #154A7D 61.6%);
+	&-btn {
+		background: url(/forestess/common/img/common/bg_contact.png), linear-gradient(284deg, #FFE066 0%, #87A7C6 18.17%, #154A7D 61.6%);
 		background-size: cover;
 		background-position: bottom center;
 		background-repeat: no-repeat;

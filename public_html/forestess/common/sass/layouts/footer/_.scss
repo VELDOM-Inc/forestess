@@ -1,13 +1,13 @@
 @charset "utf-8";
 @use "../../global/_" as g;
 .l-footer {
-	background: url(/ikeda/common/img/common/bg_footer.png) top center no-repeat g.$bg-blue;
+	background: url(/forestess/common/img/common/bg_footer.png) top center no-repeat g.$bg-blue;
 	background-size: cover;
 	padding: 130px 30px 95px;
 
 	@include g.smMax {
 		padding: 60px 15px 40px;
-		background: url(/ikeda/common/img/common/bg_footer.png) bottom center no-repeat g.$bg-blue;
+		background: url(/forestess/common/img/common/bg_footer.png) bottom center no-repeat g.$bg-blue;
 		background-size: 250%;
 	}
 

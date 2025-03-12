@@ -5,7 +5,7 @@ return array(
 	array(
 
 		// 顧客向けメールのfrom名前
-		'name' => '株式会社池田開発',
+		'name' => '株式会社フォレステス',
 
 		// 送信元メールアドレス
 		'from' => 'info@veldom02.xsrv.jp',
@@ -20,7 +20,7 @@ return array(
 		'bcc' => '',
 
 		// 顧客向けメールの件名
-		'subject' => '【株式会社池田開発】お問い合わせありがとうございます',
+		'subject' => '【株式会社フォレステス】お問い合わせありがとうございます',
 
 		// メール本文テンプレートファイル名
 		'template' => 'templates/mail1.php',
@@ -36,14 +36,14 @@ return array(
 	array(
 
 		// 管理者向けメールのfrom名前
-		'name' => '株式会社池田開発',
+		'name' => '株式会社フォレステス',
 
 		// 送信元メールアドレス
 		'from' => 'info@veldom02.xsrv.jp',
 
 		// 送信先メールアドレス
 		// class（区分）の選択によって送信先を変更する例
-		'to' => 'info@ikeda-kaihatsu.jp',
+		'to' => 'info@forestess-kaihatsu.jp',
 
 		// CCメールアドレス
 		'cc' => '',

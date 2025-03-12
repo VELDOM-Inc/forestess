@@ -69,7 +69,7 @@
 				transition-timing-function: cubic-bezier(0.65,0,0.35,1),cubic-bezier(0.33,1,0.68,1);
 
 				.p-kv__glow {
-					mask-image: url(/ikeda/common/img/index/bg_wave.svg);
+					mask-image: url(/forestess/common/img/index/bg_wave.svg);
 					mask-position: left;
 					mask-repeat: no-repeat;
 					mask-clip: fill-box;
@@ -98,7 +98,7 @@
 				}
 
 				.c-index-wave {
-					mask-image: url(/ikeda/common/img/index/bg_wave.svg);
+					mask-image: url(/forestess/common/img/index/bg_wave.svg);
 					mask-position: left;
 					mask-repeat: no-repeat;
 					mask-clip: fill-box;
@@ -200,7 +200,7 @@
 				transition-delay: 1.2s;
 				transition-timing-function: cubic-bezier(0.33,1,0.68,1);*/
 
-				/*mask-image: url(/ikeda/common/img/index/bg_wave.svg);
+				/*mask-image: url(/forestess/common/img/index/bg_wave.svg);
 				mask-position: left;
 				mask-repeat: no-repeat;
 				mask-clip: fill-box;
@@ -413,7 +413,7 @@
 						}
 
 						&::after {
-							background: url(/ikeda/common/img/index/bg_collection.jpg) center center no-repeat;
+							background: url(/forestess/common/img/index/bg_collection.jpg) center center no-repeat;
 							background-size: cover;
 						}
 					}
@@ -422,7 +422,7 @@
 				&._disposal_ {
 					.c-index-business-list__link {
 						&::after {
-							background: url(/ikeda/common/img/index/bg_disposal.jpg) center center no-repeat;
+							background: url(/forestess/common/img/index/bg_disposal.jpg) center center no-repeat;
 							background-size: cover;
 						}
 					}
@@ -437,7 +437,7 @@
 						}
 
 						&::after {
-							background: url(/ikeda/common/img/index/bg_flow.jpg) center center no-repeat;
+							background: url(/forestess/common/img/index/bg_flow.jpg) center center no-repeat;
 							background-size: cover;
 						}
 					}
