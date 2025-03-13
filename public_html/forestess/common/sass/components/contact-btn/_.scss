@@ -2,179 +2,89 @@
 @use "../../global/_" as g;
 .c-contact {
 	&-btn {
-		
-		color: g.$white;
-		padding: 95px 30px;
-		margin: 180px 0 0;
+		padding: 0 30px;
+		max-width: 1020px;
+		margin: 0 auto 180px;
 
-		@include g.smMax {
-			margin: 60px 0 0;
-			padding: 50px 15px;
-			background: linear-gradient(284deg, #FFE066 0%, #87A7C6 18.17%, #154A7D 61.6%);
+		&__link {
+			border: 2px solid g.$aqua;
+			position: relative;
+			padding: 70px 80px 60px;
+			background-color: #fff;
+			background-image: linear-gradient(135deg, g.$aqua 50%, transparent 50%);
+			background-position: 100%;
+			background-size: 300%;
+			text-decoration: none;
+			transition: background 750ms ease-in-out;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			@media only screen and (min-width: 768px) and (max-width: 850px) {
+				padding: 70px 40px 60px;
+			}
+
+			@include g.hover {
+				background-position: 0;
+				color: g.$white;
+
+				.__ttl ,
+				.__txt {
+					color: g.$white;
+				}
+
+				.__ttl {
+					&::before {
+						color: g.$white;
+					}
+				}
+
+				.__ico {
+					transform: translateX(15px) translateY(0);
+				}
+			}
 		}
 
 		&__inner {
-			max-width: 1200px;
-			margin: 0 auto;
-			display: flex;
-			justify-content: space-between;
-			align-items: flex-end;
-
-			@media only screen and (min-width: 768px) and (max-width: 1045px) {
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-			}
-
-			@include g.smMax {
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-			}
-		} 
-
-		&__left {
-			width: calc((100% - 31.67%) - 50px);
-
-			@media only screen and (min-width: 768px) and (max-width: 1045px) {
-				margin: 0 0 50px;
-				width: 100%;
-				text-align: center;
-			}
-
-			@include g.smMax {
-				width: 100%;
-				margin: 0 0 30px;
-			}
-		}
-
-		&__right {
-			width: 31.67%;
-
-			@media only screen and (min-width: 768px) and (max-width: 1045px) {
-				width: 100%;
-				text-align: center;
-			}
-
-			@include g.smMax {
-				width: 100%;
-				text-align: center;
-			}
-
-			.e-btn-arrow {
-				width: 100%;
-				min-width: auto;
-
-				@media only screen and (min-width: 768px) and (max-width: 1045px) {
-					min-width: 380px !important;
-					width: auto;
-				}
-			}
-		}
-
-		&__ttl {
-			margin: 0 0 50px;
-			display: flex;
-			align-items: flex-end;
-			justify-content: flex-start;
-
-			@media only screen and (min-width: 768px) and (max-width: 1045px) {
-				margin: 0 0 30px;
-				justify-content: center;
-			}
-
-			@include g.smMax {
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				margin: 0 0 25px;
-			}
-
 			.__ttl {
-				font-size: 5.0rem;
-				font-weight: 700;
-				line-height: 1.2;
+				font-size: 6.4rem;
+				font-style: italic;
+				font-weight: 500;
+				color: g.$baseColor;
+				@include g.font-en;
+				letter-spacing: 0;
 				position: relative;
-				padding: 40px 0 0;
-				margin: 0 40px 0 0;
-
-				@include g.smMax {
-					margin: 0 0 15px;
-					font-size: 3.6rem;
-					padding: 30px 0 0;
-					text-align: center;
-				}
+				padding: 0 0 0 35px;
+				margin: 0 0 50px;
+				@include g.transition;
 
 				&::before {
 					position: absolute;
-					content: attr(data-en);
+					content: attr(data-number);
 					top: 0;
 					left: 0;
-					font-size: g.$fz-xxl;
+					font-size: g.$fz-xxxl;
+					color: g.$baseColor;
 					@include g.font-bold;
 					@include g.font-en;
-					font-weight: 500;
-					color: g.$white;
-
-					@include g.smMax {
-						font-size: g.$fz-l;
-						@include g.centering-elements(true, false);
-					}
+					font-style: italic;
+					line-height: 0;
+					@include g.transition;
 				}
-			}
-		}
-	}
-
-	&-tel {
-		display: flex;
-		align-items: flex-end;
-		justify-content: flex-start;
-
-		@media only screen and (min-width: 768px) and (max-width: 1045px) {
-			justify-content: center;
-		}
-
-		@include g.smMax {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-
-		&__ttl {
-			margin: 0 35px 0 0;
-			text-align: left;
-
-			@include g.smMax {
-				margin: 0 0 10px;
-				text-align: center;
 			}
 
 			.__txt {
-				font-size: 3.0rem;
-				font-weight: 700 !important;
-				@include g.font-en;
-				line-height: 1.2;
-			}
-
-			.__small {
-				font-size: 2.3rem;
+				color: g.$text-black;
+				background: none;
+				@include g.transition;
 			}
 		}
 
-		&__area {
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-
-			.__label {
-				@include g.radius(30);
-				background: g.$white;
-				font-size: 15px;
-				font-weight: 700;
-				color: g.$baseColor;
-				padding: 0 10px;
-				margin: 0 15px 0 0;
-			}
+		.__ico {
+			font-size: 4.0rem;
+			line-height: 1;
+			@include g.transition;
+			position: relative;
 		}
 	}
 }
