@@ -18,10 +18,69 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
+
+		@media only screen and (min-width: 768px) and (max-width: 1055px) {
+			width: 40%;
+		}
+
+		&__address {
+			margin: 0 0 30px;
+		}
+
+		&__tel {
+			font-size: 3.0rem;
+			@include g.font-bold;
+			@include g.font-en;
+			margin: 0 0 10px;
+
+			a[href*="tel:"] {
+				color: g.$white;
+				font-size: 4.0rem;
+			}
+		}
+
+		&__fax {
+			font-size: g.$fz-xxxl;
+			font-weight: 400;
+			@include g.font-en;
+
+			@media only screen and (min-width: 768px) and (max-width: 1170px) {
+				font-size: g.$fz-xxl;
+			}
+		}
 	}
 
 	&-right {
-		width: calc((100% - 50%) - 160px);
+		width: calc((100% - 50%) - 130px);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@media only screen and (min-width: 768px) and (max-width: 1055px) {
+			width: calc((100% - 40%) - 60px);
+		}
+
+		&-link {
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+
+			.__link {
+				color: g.$line-gray;
+				font-size: 1.5rem;
+				font-weight: 400;
+				letter-spacing: 0.75px;	
+				
+				@include g.hover {
+					color: g.$aqua;
+				}	
+			}
+
+			.__txt {
+				background: none
+			}
+		}
 	}
 
 	&-logo {
@@ -29,7 +88,7 @@
 			display: inline-block;
 			width: 288px;
 			line-height: 0;
-			margin: 0 0 60px;
+			margin: 0 0 50px;
 
 			@media only screen and (min-width: 768px) and (max-width: 955px) {
 				width: 230px;
@@ -49,186 +108,10 @@
 		}
 	}
 
-
-	/*
-	@include g.smMax {
-		padding: 60px 15px 40px;
-		background: url(/forestess/common/img/common/bg_footer.png) bottom center no-repeat g.$bg-blue;
-		background-size: 250%;
-	}
-
-	&__inner {
-		max-width: 1200px;
-		margin: 0 auto 85px;
-		display: flex;
-		justify-content: space-between;
-
-		@include g.smMax {
-			margin: 0 auto 40px;
-			flex-direction: column;
-		}
-	} 
-
-	&-left {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-		width: calc((100% - 61.67%) - 100px);
-
-		@media only screen and (min-width: 768px) and (max-width: 1010px) {
-			width: calc((100% - 61.67%) - 50px);
-		}
-
-		@include g.smMax {
-			width: 100%;
-			order: 2;
-		}
-	}
-
-	&-logo {
-		@include g.smMax {
-			text-align: center;
-			margin: 0 0 30px;
-		}
-
-		&__link {
-			display: inline-block;
-			margin: 0 0 45px;
-
-			@include g.smMax {
-				display: block;
-				width: 220px;
-				margin: 0 auto 20px;
-			}
-		}
-	}
-
 	&-copyright {
-		color: #9E9E9E;
-		font-size: 1.5rem;
-		@include g.font-en;
+		font-size: g.$fz-xs;
 		font-weight: 400;
-
-		@include g.smMax {
-			font-size: g.$fz-xs;
-			text-align: center;
-		}
+		letter-spacing: 0.65px;
+		color: g.$line-gray;
 	}
-
-	&-right {
-		width: 61.67%;
-		padding: 25px 0 0;
-
-		@include g.smMax {
-			width: 100%;
-			order: 1;
-		}
-	}
-
-	&__kankyo {
-		max-width: 484px;
-		margin: 0 auto 65px;
-
-		@include g.smMax {
-			max-width: 300px;
-			margin: 0 auto 30px;
-		}
-	}
-
-	.l-fnav {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: 30px;
-
-		@include g.smMax {
-			grid-template-columns: repeat(1, 1fr);
-			row-gap: 40px;
-			margin: 0 0 40px;
-		}
-		
-		&__item {
-			margin: 0 0 50px;
-
-			@include g.smMax {
-				margin: 0 0 40px;
-			}
-	
-			&:last-of-type {
-				margin: 0;
-			}
-		}
-	
-		&__link {
-			color: g.$text-black;
-			font-size: g.$fz-m;
-			font-weight: 500;
-			padding: 0 0 15px;
-			position: relative;
-			display: block;
-
-			@include g.smMax {
-				font-size: g.$fz-s;
-			}
-
-			&::before ,
-			&::after {
-				display: block;
-				content: "";
-				position: absolute;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				height: 2px;
-				background: g.$line-gray2;
-				z-index: 1;
-			}
-
-			&::after {
-				background: g.$baseColor;
-				transform: scaleX(0);
-				transform-origin: left;
-				transition-property: transform;
-				transition-duration: 0.5s;
-				transition-timing-function: cubic-bezier(0.87,0,0.13,1);
-
-				@include g.smMax {
-					display: none;
-				}
-			}
-
-			@include g.hover {
-				&::after {
-					transform: scaleX(1);
-					transform-origin: left;
-					transition-timing-function: cubic-bezier(0.16,1,0.3,1);
-				}
-			}
-	
-			.__txt {
-				background: none;
-				position: relative;
-				padding: 35px 0 0;
-
-				@include g.smMax {
-					padding: 30px 0 0;
-				}
-	
-				&::before {
-					position: absolute;
-					content: attr(data-en);
-					top: 0;
-					left: 0;
-					font-size: g.$fz-xxl;
-					color: g.$baseColor;
-					@include g.font-bold;
-					@include g.font-en;
-					font-weight: 700;
-
-					@include g.smMax {
-						font-size: 1.9rem;
-					}
-				}
-			}
-		}
-	}*/
 }

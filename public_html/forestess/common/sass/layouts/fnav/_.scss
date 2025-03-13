@@ -1,0 +1,69 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.l-fnav {
+	margin: 0 0 95px;
+	width: 100%;
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0 80px;
+
+		@media only screen and (min-width: 768px) and (max-width: 1055px) {
+			gap: 0 40px;
+		}
+	}
+
+	&-detail {
+		margin: 20px 0 0;
+
+		&:first-child {
+			margin: 0;
+		}
+
+		&._service_ {
+			margin: 0;
+		}
+
+		&__link {
+			font-size: g.$fz-xxxl;
+			font-style: italic;
+			font-weight: 500;
+			color: g.$dark-aqua;
+			@include g.font-en;
+			letter-spacing: 0;
+
+			@include g.hover {
+				color: g.$aqua;
+			}
+
+			.__txt {
+				background: none;
+			}
+		}
+
+		&-sub {
+			margin: 20px 0 0;
+
+			&__item {
+				margin: 0 0 5px;
+
+				&:last-child {
+					margin: 0;
+				}
+			}
+
+			&__link {
+				color: g.$line-gray;
+
+				@include g.hover {
+					color: g.$white;
+				}
+	
+				.__txt {
+					background: none;
+				}
+			}
+		}
+	}
+}
