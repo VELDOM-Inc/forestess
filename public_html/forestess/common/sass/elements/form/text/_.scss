@@ -3,19 +3,20 @@
 .e-form-text {
 	display: inline-block;
 	width: 100%;
-	padding: 10px 20px;
+	padding: 15px 20px;
 	background: g.$bg-gray;
 	border: none;
 	color: g.$text-black;
-	@include g.radius(5);
-	font-size: 1.7rem;
-	@include g.font-normal;
+	@include g.radius(2);
+	font-size: g.$fz-m;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
 	
 	&._w-m_ {
-		max-width: 420px;
+		max-width: 640px;
 	}
 	&._w-s_ {
-		max-width: 260px;
+		max-width: 295px;
 	}
 	&._w-a_ {
 		width: auto;
@@ -25,7 +26,8 @@
 	&::-moz-placeholder ,
 	&:-ms-input-placeholder ,
 	&::-webkit-input-placeholder {
-		color: #B0B0B0;
+		color: g.$gray;
 		opacity: 1;
+		font-weight: 400;
 	}
 }

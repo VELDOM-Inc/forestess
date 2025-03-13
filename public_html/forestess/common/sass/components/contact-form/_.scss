@@ -1,99 +1,40 @@
 @charset "utf-8";
 @use "../../global/_" as g;
 .c-contact-form {
-	margin: 0 0 185px;
-
-	@include g.smMax {
-		margin: 0 0 70px;
-	}
-
-	&__txt {
-		margin: 5px 0 0;
-
-		@include g.smMax {
-			margin: 10px 0 0;
-		}
-	}
-	
 	&-tel {
-		max-width: 960px;
-		margin: 0 auto 100px;
-		text-align: center;
-
-		@include g.smMax {
-			margin: 0 auto 50px;
-		}
-
-		&__ttl {
-			font-size: 2.3rem;
-			margin: 0 0 20px;
-			@include g.font-bold;
-
-			@include g.smMax {
-				margin: 0 0 10px;
-				font-size: 1.9rem;
-			}
-		}
-
-		&__txt {
-			font-size: 3.2rem;
-			font-weight: 700;
-			@include g.font-en;
-			margin: 0 0 15px;
-			color: g.$baseColor;
-			line-height: 1.4;
-
-			@include g.smMax {
-				font-size: g.$fz-xl;
-				margin: 0 0 10px;
-			}
-
-			.__tel {
-				font-size: 4.8rem;
-				color: g.$baseColor;
-				line-height: 1.0;
-
-				@include g.smMax {
-					font-size: 3.0rem;
-				}
-			}
-		}
-	}	
-
-	&-time {
+		margin: 0 0 80px;
+		padding-left: 80px;
+		padding-right: 80px;
+		padding-top: 50px;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 
-		@include g.smMax {
-			flex-direction: column;
+		&__ttl {
+			font-size: g.$fz-xxxl;
+			@include g.font-bold;
+			letter-spacing: 1.2px;
 		}
 
 		&__txt {
-			margin: 0 30px 0 0;
+			text-align: center;
 
-			@include g.smMax {
-				margin: 0;
-			}
-		}
-
-		&__area {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-			@include g.smMax {
-				margin: 10px 0 0;
+			.__tel {
+				@include g.font-bold;
+				color: g.$baseColor;
+				@include g.font-en;
+				font-size: 3.2rem;
+				margin: 0 0 10px;
 			}
 
-			.__label {
-				background: g.$baseColor;
-				@include g.radius(30);
+			.__link {
+				font-size: 4.8rem;
+				color: g.$baseColor;
+			}
+
+			.__time {
 				font-size: 1.5rem;
-				font-weight: 700;
-				color: g.$white;
-				padding: 5px 15px;
-				margin: 0 15px 0 0;
+				letter-spacing: 0.75px;
 			}
 		}
 	}

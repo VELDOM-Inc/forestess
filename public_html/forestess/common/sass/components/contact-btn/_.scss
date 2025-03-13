@@ -4,10 +4,11 @@
 	&-btn {
 		padding: 0 30px;
 		max-width: 1020px;
-		margin: 0 auto;
+		margin: 150px auto 0;
 
 		@include g.smMax {
 			padding: 0 15px;
+			margin: 60px auto 0;
 		}
 
 		&__link {

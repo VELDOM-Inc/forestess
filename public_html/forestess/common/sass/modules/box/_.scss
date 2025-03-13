@@ -1,7 +1,7 @@
 @charset "utf-8";
 @use "../../global/_" as g;
 .m-box {
-	padding: 60px;
+	padding: 40px;
 	background: g.$white;
 
 	@include g.smMax {
@@ -10,18 +10,8 @@
 	&._gray_ {
 		background: g.$bg-gray;
 	}
-	&._line-gray_ {
-		border: 1px solid g.$line-gray2;
-	}
-	&._blue_ {
-		background: #EEF7FE;
-	}
-	&._radius_ {
-		border-radius: 15px;
-
-		@include g.smMax {
-			border-radius: 7px;
-		}
+	&._border_ {
+		border: 2px solid g.$aqua;
 	}
 	&._error_ {
 		border: 2px solid g.$red;

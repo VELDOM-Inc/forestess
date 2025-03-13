@@ -4,11 +4,11 @@
 	&__inner {
 		max-width: 1340px;
 		margin: 0 auto;
-		padding: 120px 30px 150px;
+		padding: 120px 30px 0;
 
 		@include g.smMax {
 			margin: 0;
-			padding: 50px 15px 60px;
+			padding: 50px 15px 0;
 		}
 	}
 

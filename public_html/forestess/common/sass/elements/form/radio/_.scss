@@ -24,7 +24,7 @@
 		&::before {
 			left: 0;
 			content: '';
-			border: 1px solid #d9d9d9;
+			border: 1px solid g.$line-gray;
 			@include g.centering-elements(false, true);
 			@include g.circle(17);
 		}

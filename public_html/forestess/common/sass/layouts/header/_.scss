@@ -58,6 +58,10 @@
 					@include g.hover {
 						color: g.$baseColor;
 					}
+
+					&.active {
+						color: g.$baseColor;
+					}
 				}
 			}
 
@@ -147,6 +151,10 @@
 			@include g.font-bold;
 
 			@include g.hover {
+				color: g.$baseColor;
+			}
+
+			&.active {
 				color: g.$baseColor;
 			}
 

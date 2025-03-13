@@ -5,7 +5,7 @@ return array (
 		'field' => 'class',
 		'label' => 'お問い合わせの種類',
 		'rules' => 'trim|required',
-		'options' => array('産業廃棄物について', '会社について', 'その他')
+		'options' => array('会社について', 'その他')
 	),
 	array (
 		'field' => 'name',
@@ -19,7 +19,7 @@ return array (
 	),
 	array (
 		'field' => 'company',
-		'label' => '会社名／組織名',
+		'label' => '会社名',
 		'rules' => 'trim'
 	),
 	array (
@@ -49,8 +49,8 @@ return array (
 	),
 	array (
 		'field' => 'agreement',
-		'label' => '個人情報取り扱いについて同意する',
+		'label' => 'プライバシーポリシーについてを確認し同意する',
 		'rules' => 'required',
-		'options' => array('個人情報取り扱いについて同意する')
+		'options' => array('プライバシーポリシーについてを確認し同意する')
 	),
 );
