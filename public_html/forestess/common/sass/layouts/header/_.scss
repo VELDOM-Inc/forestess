@@ -9,6 +9,10 @@
 	height: 100px;
 	@include g.transition;
 
+	@include g.smMax {
+		height: 75px;
+	}
+
 	._gnav-show_ & {
 		.l-header {
 			&__inner {
@@ -80,6 +84,11 @@
 		@media only screen and (min-width: 768px) and (max-width: 850px) {
 			padding: 0 20px;
 		}
+
+		@include g.smMax {
+			height: 75px;
+			padding: 0 15px;
+		}
 	}
 
 	&-logo {
@@ -91,7 +100,7 @@
 		}
 
 		@include g.smMax {
-			width: 160px;
+			width: 170px;
 		}
 
 		&__link {
@@ -219,6 +228,10 @@
 
 			&::before {
 				content: "MENU";
+			}
+
+			@include g.smMax {
+				font-size: g.$fz-l;
 			}
 		}
 	}

@@ -6,11 +6,20 @@
 	padding: 80px 30px 50px;
 	margin: 180px 0 0;
 
+	@include g.smMax {
+		padding: 40px 15px 50px;
+		margin: 50px 0 0;
+	}
+
 	&__inner {
 		max-width: 1200px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
+
+		@include g.smMax {
+			flex-direction: column;
+		}
 	}
 
 	&-left {
@@ -24,19 +33,35 @@
 			width: 40%;
 		}
 
+		@include g.smMax {
+			width: 100%;
+			order: 2;
+			text-align: center;
+			padding: 50px 0 0;
+			border-top: 1px solid rgba(255, 255, 255, 0.2);
+		}
+
 		&__address {
 			margin: 0 0 30px;
 		}
 
 		&__tel {
-			font-size: 3.0rem;
+			font-size: g.$fz-xl;
 			@include g.font-bold;
 			@include g.font-en;
 			margin: 0 0 10px;
 
+			@include g.smMax {
+				font-size: g.$fz-xxl;
+			}
+
 			a[href*="tel:"] {
 				color: g.$white;
 				font-size: 4.0rem;
+
+				@include g.smMax {
+					font-size: 3.2rem;
+				}
 			}
 		}
 
@@ -47,6 +72,10 @@
 
 			@media only screen and (min-width: 768px) and (max-width: 1170px) {
 				font-size: g.$fz-xxl;
+			}
+
+			@include g.smMax {
+				font-size: g.$fz-xl;
 			}
 		}
 	}
@@ -60,6 +89,11 @@
 
 		@media only screen and (min-width: 768px) and (max-width: 1055px) {
 			width: calc((100% - 40%) - 60px);
+		}
+
+		@include g.smMax {
+			width: 100%;
+			order: 1;
 		}
 
 		&-link {
@@ -85,6 +119,11 @@
 	}
 
 	&-logo {
+		@include g.smMax {
+			width: 100%;
+			margin: 0 0 40px;
+		}
+		
 		&__link {
 			display: inline-block;
 			width: 288px;
@@ -96,7 +135,8 @@
 			}
 	
 			@include g.smMax {
-				width: 160px;
+				width: 200px;
+				margin: 0 0 25px;
 			}
 
 			.__elem {
@@ -114,5 +154,10 @@
 		font-weight: 400;
 		letter-spacing: 0.65px;
 		color: g.$line-gray;
+
+		@include g.smMax {
+			text-align: center;
+			width: 100%;
+		}
 	}
 }

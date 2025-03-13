@@ -26,7 +26,7 @@ const listener = (event) => {
         $('html,body').stop().animate({scrollTop:position}, speed, 'swing');   
     });
 	} else {
-		var headerHeight = 90;
+		var headerHeight = 100;
     var speed = 800;
     var urlHash = location.hash;
     if(urlHash) {

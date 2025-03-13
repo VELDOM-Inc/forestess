@@ -6,6 +6,10 @@
 		max-width: 1020px;
 		margin: 0 auto;
 
+		@include g.smMax {
+			padding: 0 15px;
+		}
+
 		&__link {
 			border: 2px solid g.$aqua;
 			position: relative;
@@ -19,6 +23,12 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+
+			@include g.smMax {
+				flex-direction: column;
+				padding: 60px 20px 30px;
+				justify-content: center;
+			}
 
 			@media only screen and (min-width: 768px) and (max-width: 850px) {
 				padding: 70px 40px 60px;
@@ -46,6 +56,10 @@
 		}
 
 		&__inner {
+			@include g.smMax {
+				margin: 0 0 20px;
+			}
+
 			.__ttl {
 				font-size: 6.4rem;
 				font-style: italic;
@@ -57,6 +71,11 @@
 				padding: 0 0 0 35px;
 				margin: 0 0 50px;
 				@include g.transition;
+
+				@include g.smMax {
+					font-size: 5.2rem;
+					margin: 0 0 20px;
+				}
 
 				&::before {
 					position: absolute;
@@ -85,6 +104,10 @@
 			line-height: 1;
 			@include g.transition;
 			position: relative;
+
+			@include g.smMax {
+				font-size: 2.4rem;
+			}
 		}
 	}
 }

@@ -6,6 +6,11 @@
 	color: g.$white;
 	padding: 100px 30px 0;
 
+	@include g.smMax {
+		height: 330px;
+		padding: 75px 15px 0;
+	}
+
 	&__inner {
 		display: flex;
 		align-items: flex-end;
@@ -20,10 +25,18 @@
 		line-height: 1.0;
 		@include g.font-en;
 		text-align: center;
+
+		@include g.smMax {
+			font-size: 8.0rem;
+		}
 		
 		.__en {
 			position: relative;
 			padding: 40px 0 0;
+
+			@include g.smMax {
+				padding: 20px 0 0;
+			}
 
 			&::before {
 				content: attr(data-number);
@@ -36,12 +49,16 @@
 				font-style: italic;
 				line-height: 0;
 				@include g.transition;
+
+				@include g.smMax {
+					font-size: 3.2rem;
+				}
 			}
 		}
 	}
 
 	&._privacy_ {
-		background: url(/forestess/common/img/privacy/bg_ttl_privacy.png) 0 0 no-repeat;
+		background: url(/forestess/common/img/privacy/bg_ttl_privacy.png) center bottom no-repeat;
 		background-size: cover;
 	}
 }

@@ -4,6 +4,10 @@
 	margin: 0 0 95px;
 	width: 100%;
 
+	@include g.smMax {
+		margin: 0 0 45px;
+	}
+
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -11,6 +15,11 @@
 
 		@media only screen and (min-width: 768px) and (max-width: 1055px) {
 			gap: 0 40px;
+		}
+
+		@include g.smMax {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 30px 0;
 		}
 	}
 
@@ -25,6 +34,17 @@
 			margin: 0;
 		}
 
+		&__item {
+			&:first-child {
+				&.u-sm-max {
+					margin: 0 0 20px;
+				}
+			}
+			&.u-sm-max {
+				margin: 20px 0 0;
+			}
+		}
+
 		&__link {
 			font-size: g.$fz-xxxl;
 			font-style: italic;
@@ -33,6 +53,10 @@
 			@include g.font-en;
 			letter-spacing: 0;
 
+			@include g.smMax {
+				font-size: 3.2rem;
+			}
+			
 			@include g.hover {
 				color: g.$aqua;
 			}
@@ -45,11 +69,19 @@
 		&-sub {
 			margin: 20px 0 0;
 
+			@include g.smMax {
+				margin: 10px 0 0;
+			}
+
 			&__item {
 				margin: 0 0 5px;
 
 				&:last-child {
 					margin: 0;
+				}
+
+				@include g.smMax {
+					margin: 0 0 10px;
 				}
 			}
 
@@ -58,6 +90,10 @@
 
 				@include g.hover {
 					color: g.$white;
+				}
+
+				@include g.smMax {
+					font-size: 1.5rem;
 				}
 	
 				.__txt {
