@@ -7,10 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<title>送信完了画面：お問い合わせ｜株式会社フォレステス｜安心・信頼・品質につながる技術力を追求</title>
-		<meta name="description" content="お問い合わせのページです。は、福岡市を拠点に冷媒フロン類回収工事と重量物工事を中心に事業展開を行っております。">
+		<meta name="description" content="お問い合わせのページです。株式会社フォレステスは、福岡市を拠点に冷媒フロン類回収工事と重量物工事を中心に事業展開を行っております。">
 		<meta name="keywords" content="冷媒フロン,フォレステス,福岡,forestess,重量物">
 		<meta property="og:title" content="お問い合わせ｜株式会社フォレステス｜安心・信頼・品質につながる技術力を追求">
-		<meta property="og:description" content="お問い合わせのページです。は、福岡市を拠点に冷媒フロン類回収工事と重量物工事を中心に事業展開を行っております。">
+		<meta property="og:description" content="お問い合わせのページです。株式会社フォレステスは、福岡市を拠点に冷媒フロン類回収工事と重量物工事を中心に事業展開を行っております。">
 		<meta property="og:type" content="article">
 		<meta property="og:url" content="https://xxxx.com/contact/">
 		<meta property="og:image" content="https://xxxx.com/common/img/common/og_image.png">

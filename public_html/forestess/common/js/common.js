@@ -103,4 +103,22 @@ if (!isMobile) {
   });
 }
 
+/* ふわっとした動き */
+jQuery(function($) {
+	$(window).on('load scroll', function (){
 
+		var box = $('.inview');
+		var animated = 'active';
+
+		box.each(function(){
+
+			var boxOffset = $(this).offset().top;
+			var scrollPos = $(window).scrollTop();
+			var wh = $(window).height();
+
+			if(scrollPos > boxOffset - wh + 100 ){
+				$(this).addClass(animated);
+			}
+		});
+	});
+});

@@ -6,18 +6,18 @@
 	top: 100px;
 	z-index: -1;
 	width: 100%;
-	height: 100vh;
-	background: g.$white;
+	height: 100%;
 	opacity: 0;
 	overflow-y: auto;
 	overscroll-behavior-y: contain;
 	pointer-events: none;
-	@include g.transition;
+	transition: background-color 0s;
 
 	._gnav-show_ & {
 		z-index: 1;
 		opacity: 1;
 		pointer-events: auto;
+		background-color: g.$white;
 	}
 
 	&__inner {
