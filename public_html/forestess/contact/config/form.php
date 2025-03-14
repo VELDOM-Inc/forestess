@@ -4,12 +4,12 @@ return array (
 	array (
 		'field' => 'class',
 		'label' => 'お問い合わせの種類',
-		'rules' => 'trim|required',
+		'rules' => 'trim',
 		'options' => array('会社について', 'その他')
 	),
 	array (
 		'field' => 'name',
-		'label' => '氏名',
+		'label' => 'お名前',
 		'rules' => 'trim|required'
 	),
 	array (

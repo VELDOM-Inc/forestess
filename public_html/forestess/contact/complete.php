@@ -20,7 +20,7 @@
 		<!--============================================== /html_head -->
 	</head>
 
-	<body>
+	<body class="c-contact-complete">
 		<!--============================================== body_head -->
 		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/body_head.html'; ?>
 		<!--============================================== /body_head -->
@@ -31,38 +31,35 @@
 			<!--============================================== /header -->
 			
 			<!-- .e-h1 -->
-			<div class="e-h1">
+			<div class="e-h1 _contact_">
 				<div class="e-h1__inner">
-					<!-- .c-breadcrumb -->
-					<nav class="c-breadcrumb">
-						<ul class="c-breadcrumb__inner">
-							<li class="c-breadcrumb__item"><a href="/forestess/" class="c-breadcrumb__link">TOP</a></li>
-							<li class="c-breadcrumb__item"><a href="/forestess/contact/" class="c-breadcrumb__link">お問い合わせ</a></li>
-							<li class="c-breadcrumb__item">送信完了</li>
-						</ul>
-					</nav>
-					<!-- /.c-breadcrumb -->
-					<div class="e-h1__ttl">
-						<h1 class="__jp">お問い合わせ</h1>
-						<span class="__en">Contact</span>
+					<div class="e-h1__ttl inview fadeup">
+						<h1 class="__en" data-number="03">Contact</h1>
 					</div>
 				</div>
 			</div>
 			<!-- /.e-h1 -->
 			
 			<!-- .l-contents -->
-			<div class="l-contents">
+			<div class="l-contents _w-m_">
 				<!-- .l-contents__inner -->
 				<div class="l-contents__inner">
 					<!-- .c-contact-form -->
 					<div id="form" class="c-contact-form">
-						<h2 class="e-h4">お問い合わせありがとうございました</h2>
+						<div class="c-contact-form-flow">
+							<p class="c-contact-form-flow__item _flow01_"><span class="__txt">入力</span></p>
+							<p class="c-contact-form-flow__item _flow02_"><span class="__txt">確認</span></p>
+							<p class="c-contact-form-flow__item _flow03_"><span class="__txt">完了</span></p>
+						</div>
+						
+						<h2 class="e-h4">お問い合わせありがとう<br class="u-sm-max">ございました</h2>
 						<p class="u-mb-xl">この度はお問い合わせいただき誠にありがとうございました。<br>
 							改めて担当者よりご連絡をさせていただきます。</p>
 
 						<div class="u-al-fc">
-							<a href="/forestess/" class="e-btn-arrow _m0_ js-splitText _arrow-right_">
-								TOPへ
+							<a href="/forestess/" class="e-btn-arrow _m0_">
+								<span class="__txt">TOPへ</span>
+								<span class="__ico icon-arrow-right" aria-hidden="true"></span>
 							</a>
 						</div>
 					</div>

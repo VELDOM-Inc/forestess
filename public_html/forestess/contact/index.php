@@ -23,7 +23,7 @@ require_once("./src/bootstrap.php");
 		<!--============================================== /html_head -->
 	</head>
 
-	<body>
+	<body class="c-contact">
 		<!--============================================== body_head -->
 		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/body_head.html'; ?>
 		<!--============================================== /body_head -->
@@ -59,10 +59,10 @@ require_once("./src/bootstrap.php");
 
 					<!-- .c-contact-form -->
 					<section id="form" class="c-contact-form">
-						<h2 class="e-h4 inview fadeup">下記のお問い合わせフォーム<br class="u-sm-max">よりお気軽にご相談ください</h2>
+						<h2 class="e-h4 inview fadeup">下記のお問い合わせフォームよりお気軽にご相談ください</h2>
 						<p class=" inview fadeup delay01 u-mb-l">当ページでのお問い合わせおよびお見積依頼のお申込については、<br class="u-sm-min">3営業日以内に返信させていただいております。</p>
-						<p class=" inview fadeup delay01 u-mb-xs">3営業日を過ぎても当社から何もアクセスがない場合は、当社へ直接お電話（TEL. <a href="tel:092-419-2557">092-419-2557</a>）ください。</p>
-						<p class=" inview fadeup delay01 u-mb-xs">ご記入いただいたメールアドレスの誤記やメール受信設定等が原因でお客様にメールを返信できない場合があります。</p>
+						<p class=" inview fadeup delay01 u-mb-xxs">3営業日を過ぎても当社から何もアクセスがない場合は、当社へ直接お電話（TEL. <a href="tel:092-419-2557">092-419-2557</a>）ください。</p>
+						<p class=" inview fadeup delay01 u-mb-xxs">ご記入いただいたメールアドレスの誤記やメール受信設定等が原因でお客様にメールを返信できない場合があります。</p>
 						<p class=" inview fadeup delay01 u-mb-xl"><span class="u-c-red">※</span>は必須項目です。</p>
 
 						<div class="c-contact-form-flow">
@@ -81,10 +81,10 @@ require_once("./src/bootstrap.php");
 						<form method="post" enctype="multipart/form-data" autocomplete="off" action="#form" class="h-adr">
 						<input type="hidden" class="p-country-name" value="Japan">
 
-							<table class="m-table _sp-col1_ u-mb-xl inview fadeup delay02">
+							<table class="m-table _col1_ u-mb-xl inview fadeup delay02">
 								<tbody class="m-table--body">
 									<tr>
-										<th class="">お問い合わせの種類<span class="u-c-red">※</span></th>
+										<th class="_green_">お問い合わせの種類</th>
 										<td class="<?php if ($form->is_error('class')) : ?>error<?php endif; ?>">
 											<?php foreach($form->get_options('class') as $class) : ?>
 											<label class="e-form-check u-mr-m">
@@ -96,78 +96,78 @@ require_once("./src/bootstrap.php");
 										</td>
 									</tr>
 									<tr>
-										<th class="">会社名</th>
+										<th class="_green_">会社名</th>
 										<td class="<?php if ($form->is_error('company')) : ?> error<?php endif; ?>">
 											<input type="text" name="company" class="e-form-text" value="<?php echo e($form->get('company')); ?>" placeholder="会社名を入力してください">
 											<?php echo $form->error('company', '<div class="e-alert">', '</div>'); ?>
 										</td>
 									</tr>
 									<tr>
-										<th class="">お名前<span class="u-c-red">※</span></th>
+										<th class="_green_">お名前 <sup class="u-c-red">※</sup></th>
 										<td class="<?php if ($form->is_error('name')) : ?>error<?php endif; ?>">
 											<input type="text" name="name" class="e-form-text _w-m_" value="<?php echo e($form->get('name')); ?>" placeholder="お名前を入力してください">
 											<?php echo $form->error('name', '<div class="e-alert">', '</div>'); ?>
 										</td>
 									</tr>
 									<tr>
-										<th class="">フリガナ<span class="u-c-red">※</span></th>
+										<th class="_green_">フリガナ <sup class="u-c-red">※</sup></th>
 										<td class="<?php if ($form->is_error('kana')) : ?> error<?php endif; ?>">
 											<input type="text" name="kana" class="e-form-text _w-m_" value="<?php echo e($form->get('kana')); ?>" placeholder="フリガナを入力してください">
 											<?php echo $form->error('kana', '<div class="e-alert">', '</div>'); ?>
 										</td>
 									</tr>
 									<tr>
-										<th class="">ご住所</th>
+										<th class="_green_">ご住所</th>
 										<td class="<?php if ($form->is_error('zip')) : ?> error<?php endif; ?> <?php if ($form->is_error('address')) : ?> error<?php endif; ?>">
 											〒<input name="zip" type="text" value="<?php echo e($form->get('zip')); ?>" class="u-ml-xs e-form-text p-postal-code _w-s_" size="8" maxlength="8" placeholder="0123456">
-											<p>※郵便番号はハイフンなしで入力してください（例: 0123456）</p>
+											<p class="u-mt-xxxs">※郵便番号はハイフンなしで入力してください（例: 0123456）</p>
 											<input name="address" type="text" value="<?php echo e($form->get('address')); ?>" class="u-mt-s p-region p-locality p-street-address p-extended-address e-form-text" placeholder="ご住所を入力してください">
-											<p>※マンション名・建物名もご入力ください</p>
+											<p class="u-mt-xxxs">※マンション名・建物名もご入力ください</p>
 											<?php echo $form->error('zip', '<div class="e-alert">', '</div>'); ?>
 											<?php echo $form->error('address', '<div class="e-alert">', '</div>'); ?>
 										</td>
 									</tr>
 									<tr>
-										<th class="">メールアドレス<span class="u-c-red">※</span></th>
+										<th class="_green_">メールアドレス <sup class="u-c-red">※</sup></th>
 										<td class="<?php if ($form->is_error('email')) : ?>error<?php endif; ?>">
 											<input type="email" name="email" class="e-form-text" value="<?php echo e($form->get('email')); ?>" placeholder="メールアドレスを入力してください">
 											<?php echo $form->error('email', '<div class="e-alert">', '</div>'); ?>
 										</td>
 									</tr>
 									<tr>
-										<th class="">電話番号</th>
+										<th class="_green_">電話番号</th>
 										<td class="<?php if ($form->is_error('tel')) : ?>error<?php endif; ?>">
 											<input type="tel" name="tel" class="e-form-text _w-m_" value="<?php echo e($form->get('tel')); ?>" placeholder="電話番号を入力してください">
-											<p>※電話番号はハイフンなしで入力してください（例: 0123456789）</p>
+											<p class="u-mt-xxxs">※電話番号はハイフンなしで入力してください（例: 0123456789）</p>
 											<?php echo $form->error('tel', '<div class="e-alert">', '</div>'); ?>
 										</td>
 									</tr>
 									<tr>
-										<th class="">お問い合わせ詳細<span class="u-c-red">※</span></th>
+										<th class="_green_">お問い合わせ詳細 <sup class="u-c-red">※</sup></th>
 										<td class="<?php if ($form->is_error('comment')) : ?>error<?php endif; ?>">
 											<textarea placeholder="お問い合わせ内容の詳細を入力してください" name="comment" cols="50" rows="4" class="e-form-textarea"><?php echo e($form->get('comment')); ?></textarea>
 											<?php echo $form->error('comment', '<div class="e-alert">', '</div>'); ?>
 										</td>
 									</tr>
 									<tr>
-										<th class="">プライバシーポリシーについて<span class="u-c-red">※</span></th>
+										<th class="_green_">プライバシーポリシーについて <sup class="u-c-red">※</sup></th>
 										<td class="<?php if ($form->is_error('agreement')) : ?>error<?php endif; ?>">
-											<p class="c-contact-form__txt">ご入力いただいた内容については、「<a href="/forestess/privacy/" class="link-underline">プライバシーポリシー</a> 」に基づき、適切に管理いたします。<br>ページ内容をお読みいただき、ご同意の上、確認ページへお進みください。</p>
+											<p class="u-mb-m">ご入力いただいた内容については、「<a href="/forestess/privacy/" class="link-underline">プライバシーポリシー</a> 」に基づき、適切に管理いたします。<br>ページ内容をお読みいただき、ご同意の上、確認ページへお進みください。</p>
 											<?php foreach($form->get_options('agreement') as $agreement) : ?>
 											<label class="e-form-check">
 												<input type="checkbox" name="agreement" id="agreement" class="__elem" value="<?php echo $agreement ?>"<?php echo $form->checked('agreement', $agreement) ?>>
 												<span class="__txt"><?php echo $agreement ?></span>
 											</label>	
 											<?php endforeach; ?>
-											<?php if($form->error('agreement')) : ?><div class="e-alert">※個人情報取り扱いについてご同意いただけない場合は、ご利用いただけません。</div><?php endif; ?>
+											<?php if($form->error('agreement')) : ?><div class="e-alert">※プライバシーポリシーについてご同意いただけない場合は、ご利用いただけません。</div><?php endif; ?>
 										</td>
 									</tr>
 								</tbody>
 							</table>
 
 							<div class="u-al-fc inview fadeup delay02">
-								<button class="e-btn-arrow _m0_">
-									<span class="__txt">確認画面へ</span>
+								<button class="e-btn-arrow _m0_ _w-l_">
+									<span class="__txt">確認ページへ進む</span>
 									<span class="__ico icon-arrow-right" aria-hidden="true"></span>
 								</button>
 							</div>

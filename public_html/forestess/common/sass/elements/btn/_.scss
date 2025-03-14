@@ -17,15 +17,13 @@
 	line-height: 1.4;
 	@include g.transition;
 	@include g.radius(50);
-	font-size: g.$fz-xl;
+	font-size: g.$fz-m;
 	font-weight: 700;
 
 	@include g.smMax {
 		min-width: auto;
 		width: 100%;
-		height: 50px;
 		margin: 5px;
-		font-size: g.$fz-l;
 	}
 	
 	&:not(._disabled_) {
@@ -50,65 +48,20 @@
 		min-width: auto;
 		width: 100%;
 	}
-
-	/* 文字が一文字ずつ表示される */
-	.text-wrap {
-		position: relative;
-		display: flex;
-		align-items: center;
-		overflow: hidden;
-	}
-
-	.after {
-		position: absolute;
-		top: 0;
-		left: 0;
-		display: flex;
-		align-items: center;
-
-		span {
-			line-height: 1.2;
-			transition: color .3s ease-out;
-			transform: translateY(100%);
-		}
-	}
-
-	.before {
-		display: flex;
-		align-items: center;
-
-		span {
-			line-height: 1.2;
-			transition: color .3s ease-out;
-		}
-	}
 		
 	//サイズオプション Lサイズ-------------------------------
 	&._w-l_ {
-		min-width: 380px;
-		height: 90px;
-		font-size: g.$fz-xxl;
+		min-width: 320px;
+		height: 55px;
 
 		@include g.smMax {
 			width: 100%;
 			min-width: 0;
-			height: 50px;
-			font-size: g.$fz-l;
 		}
 	}
 
 	//サイズオプション Sサイズ-------------------------------
 	&._w-s_ {
-		min-width: 180px;
-		height: 45px;
-		font-size: 1.9rem;
-
-		@include g.smMax {
-			min-width: 0;
-			font-size: g.$fz-l;
-			width: 100%;
-			height: 50px;
-		}
 	}
 
 	//カラーオプション -------------------------------

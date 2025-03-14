@@ -24,7 +24,7 @@
 		display: inline-block;
 
 		@include g.smMax {
-			font-size: g.$fz-m;
+			font-size: 1.7rem;
 		}
 
 		&::before {
@@ -37,6 +37,8 @@
 			@include g.radius(2);
 
 			@include g.smMax {
+				top: 12px;
+    			@include g.centering-elements(false, false);
 			}
 		}
 
@@ -51,7 +53,8 @@
 			@include g.centering-elements(false, true);
 
 			@include g.smMax {
-				left: 5px;
+				top: 12px;
+    			@include g.centering-elements(false, false);
 			}
 		}
 	}

@@ -31,35 +31,29 @@
 	}
 }
 
+.icon-window:before {
+  content: "\e906";
+}
+.icon-window-bold:before {
+  content: "\e907";
+}
 .icon-arrow-right:before {
   content: "\e900";
 }
 .icon-arrow-left:before {
-  content: "\e907";
+  content: "\e902";
 }
 .icon-arrow-up:before {
-  content: "\e908";
+  content: "\e903";
 }
 .icon-arrow-down:before {
-  content: "\e909";
+  content: "\e905";
 }
-.icon-build:before {
+.icon-scroll:before {
   content: "\e901";
 }
 .icon-check:before {
-  content: "\e902";
-}
-.icon-enkaku:before {
-  content: "\e903";
-}
-.icon-man:before {
   content: "\e904";
-}
-.icon-map:before {
-  content: "\e905";
-}
-.icon-window:before {
-  content: "\e906";
 }
 .icon-error:before {
   content: "\e911";

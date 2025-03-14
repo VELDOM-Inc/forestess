@@ -6,7 +6,7 @@
 	th,
 	td {
 		padding: 20px 0;
-		border-bottom: 1px solid g.$line-gray2;
+		border-bottom: 1px solid g.$aqua;
 		text-align: left;
 		vertical-align: middle;
 		
@@ -16,17 +16,9 @@
 	}
 	th {
 		@include g.font-bold;
-	}
-	tr {
-		&:first-child {
-			th,
-			td {
-				padding: 0 0 20px;
 
-				@include g.smMax {
-					padding: 10px 0;
-				}
-			}	
+		.u-c-red {
+			font-size: g.$fz-m;
 		}
 	}
 	._al-l_ {
@@ -41,22 +33,48 @@
 	._nowrap_ {
 		white-space: nowrap;
 	}
-	._flex_ {
-		width: 27%;
-		position: relative;
+	._green_ {
+		font-size: g.$fz-xxxl;
+		@include g.font-bold;
+		letter-spacing: 1.2px;
+		color: g.$baseColor;
 
 		@include g.smMax {
-			width: 100%;
+			font-size: g.$fz-l;
 		}
+	}
 
-		.e-label {
-			@include g.centering-elements(false, true);
-			right: 0;
+	//1カラム -------------------------------
+	&._col1_ {
+		display: block;
+		
+		thead,
+		tbody,
+		tr,
+		th,
+		td {
+			display: block;
+		}
+		th {
+			border-bottom: none;
+			padding: 0 0 20px;
+
+			@include g.smMax {
+				padding: 0 0 10px;
+			}
+		}
+		td {
+			border-bottom: none;
+			padding: 0 0 40px;
+
+			@include g.smMax {
+				padding: 0 0 30px;
+			}
 		}
 	}
 
 	@include g.smMax {
-		//SP 1カラム -------------------------------
+		//SPのみ　1カラム -------------------------------
 		&._sp-col1_ {
 			display: block;
 			
@@ -68,32 +86,13 @@
 				display: block;
 			}
 			th {
-				@include g.smMax {
-					border-bottom: none;
-					padding: 10px 0 2px;
-				}
+				border-bottom: none;
 			}
 			td {
-				@include g.smMax {
-					padding: 2px 0 10px;
-				}
-			}
-			tr {
-				&:first-child {
-					th {
-						@include g.smMax {
-							padding: 10px 0 2px;
-						}
-					}
-					td {
-						@include g.smMax {
-							padding: 2px 0 10px;
-						}
-					}	
-				}
+				border-bottom: none;
 			}
 		}
-		
+
 		//横長 -------------------------------
 		&._wide_ {
 			border: none;
