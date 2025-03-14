@@ -36,7 +36,7 @@
 			line-height: 0.6;
 
 			@include g.smMax {
-				padding: 20px 0 0;
+				padding: 30px 0 0;
 			}
 
 			&::before {
@@ -64,12 +64,24 @@
 
 		.__en {
 			line-height: 1.0;
-			padding: 40px 0 0;
+			padding: 20px 0 0;
 		}
 	}
 
 	&._contact_ {
 		background: url(/forestess/common/img/contact/bg_ttl_contact.jpg) center bottom no-repeat;
 		background-size: cover;
+	}
+
+	&._about_ {
+		background: url(/forestess/common/img/about/bg_ttl_about.jpg) center bottom no-repeat;
+		background-size: cover;
+
+		@include g.smMax {
+			.__en {
+				line-height: 0.8;
+				margin: 0 0 -10px;
+			}
+		}
 	}
 }

@@ -87,11 +87,11 @@ $(function() {
 });
 
 // gnavi アクティブ
-document.querySelectorAll('.l-header-nav__link').forEach(link => {
+/*document.querySelectorAll('.l-header-nav__link').forEach(link => {
   if(link.href === window.location.href){
     link.classList.add('active')
   }
-})
+})*/
 
 // Tel link
 const ua = navigator.userAgent.toLowerCase(),

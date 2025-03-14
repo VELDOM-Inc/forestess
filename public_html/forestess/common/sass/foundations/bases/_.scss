@@ -81,6 +81,14 @@ a {
 		transition: all .4s;
 	}
 
+	&._black_ {
+		color: g.$text-black;
+
+		&::after {
+			background: g.$text-black;
+		}
+	}
+
 	@include g.hover {
 		&::after {
 			background: g.$white;

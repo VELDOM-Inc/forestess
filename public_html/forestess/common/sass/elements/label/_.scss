@@ -4,30 +4,14 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	min-width: 55px;
-	padding: 5px 15px;
-	background: g.$baseColor;
-	font-size: g.$fz-s;
+	min-width: 68px;
+	padding: 5px 10px;
+	background: g.$white;
+	border: 1px solid g.$line-gray;
+	font-size: g.$fz-m;
 	text-align: center;
 	line-height: 1.3;
-	color: g.$white;
-	@include g.radius(4);
-
-	&:not(:first-child) {
-		margin: 0 0 0 15px;
-		
-		@include g.smMax {
-			margin: 0 0 0 5px;
-		}
-	}
-	
-	&._ml5_ {
-		&:not(:last-child) {
-			margin: 0 5px 0 0;
-		}
-		&:not(:first-child) {
-			margin: 0;
-		}
-	}
+	color: g.$text-black;
+	@include g.radius(2);
 }
 
