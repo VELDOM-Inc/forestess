@@ -84,4 +84,16 @@
 			}
 		}
 	}
+
+	&._service_ {
+		background: url(/forestess/common/img/service/bg_ttl_service.jpg) center bottom no-repeat;
+		background-size: cover;
+
+		@include g.smMax {
+			.__en {
+				line-height: 0.8;
+				margin: 0 0 -10px;
+			}
+		}
+	}
 }
