@@ -284,7 +284,6 @@
 
 			&__list {
 				width: 100%;
-				/*width: 340px;*/
 				height: 280px;
 			}
 
@@ -317,6 +316,38 @@
 			@include g.font-bold;
 			letter-spacing: 0.9px;
 			color: g.$baseColor;
+		}
+	}
+
+	&-btn {
+		position: absolute;
+		bottom: 320px;
+		right: 0;
+		z-index: 3;
+
+		&__link {
+			width: 180px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: 16px 0 0 16px;
+			background: g.$baseColor;
+			color: g.$white;
+			padding: 20px;
+			@include g.font-bold;
+
+			.__en {
+				font-size: 4.0rem;
+				font-style: italic;
+				line-height: 84%;
+				@include g.font-en;
+				font-weight: 500;
+			}
+
+			.__txt {
+				margin: 0 0 5px;
+			}
 		}
 	}
 }

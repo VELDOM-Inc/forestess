@@ -46,17 +46,17 @@
 				<div class="l-contents__inner">
 					<!-- .c-contact-form -->
 					<div id="form" class="c-contact-form">
-						<div class="c-contact-form-flow">
+						<div class="c-contact-form-flow inview fadeup">
 							<p class="c-contact-form-flow__item _flow01_"><span class="__txt">入力</span></p>
 							<p class="c-contact-form-flow__item _flow02_"><span class="__txt">確認</span></p>
 							<p class="c-contact-form-flow__item _flow03_"><span class="__txt">完了</span></p>
 						</div>
 						
-						<h2 class="e-h4">お問い合わせありがとう<br class="u-sm-max">ございました</h2>
-						<p class="u-mb-xl">この度はお問い合わせいただき誠にありがとうございました。<br>
+						<h2 class="e-h4 inview fadeup">お問い合わせありがとう<br class="u-sm-max">ございました</h2>
+						<p class="u-mb-xl inview fadeup">この度はお問い合わせいただき誠にありがとうございました。<br>
 							改めて担当者よりご連絡をさせていただきます。</p>
 
-						<div class="u-al-fc">
+						<div class="u-al-fc inview fadeup delay01">
 							<a href="/forestess/" class="e-btn-arrow _m0_">
 								<span class="__txt">TOPへ</span>
 								<span class="__ico icon-arrow-right" aria-hidden="true"></span>

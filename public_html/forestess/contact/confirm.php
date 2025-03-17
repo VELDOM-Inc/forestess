@@ -50,16 +50,16 @@ require_once("./src/bootstrap.php");
 					
 					<!-- .c-contact-form -->
 					<div id="form" class="c-contact-form">
-						<p class="u-mb-xxl u-al-c _sm-al-l_">ご入力内容を確認いただき、よろしければ「入力内容を送信する」ボタンを、<br class="u-sm-min">
+						<p class="u-mb-xxl u-al-c _sm-al-l_ inview fadeup">ご入力内容を確認いただき、よろしければ「入力内容を送信する」ボタンを、<br class="u-sm-min">
 						修正する場合は「修正する」ボタンをクリックしてください。</p>
-						<div class="c-contact-form-flow">
+						<div class="c-contact-form-flow inview fadeup">
 							<p class="c-contact-form-flow__item _flow01_"><span class="__txt">入力</span></p>
 							<p class="c-contact-form-flow__item _flow02_"><span class="__txt">確認</span></p>
 							<p class="c-contact-form-flow__item _flow03_"><span class="__txt">完了</span></p>
 						</div>
 
 						<form method="post">
-							<table class="m-table _col1_ u-mb-xl">
+							<table class="m-table _col1_ u-mb-xl inview fadeup delay01">
 								<tbody class="m-table--body">
 									<tr>
 										<th class="_green_">お問い合わせの種類</th>

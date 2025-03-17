@@ -65,7 +65,7 @@ require_once("./src/bootstrap.php");
 						<p class=" inview fadeup delay01 u-mb-xxs">ご記入いただいたメールアドレスの誤記やメール受信設定等が原因でお客様にメールを返信できない場合があります。</p>
 						<p class=" inview fadeup delay01 u-mb-xl"><span class="u-c-red">※</span>は必須項目です。</p>
 
-						<div class="c-contact-form-flow">
+						<div class="c-contact-form-flow inview fadeup">
 							<p class="c-contact-form-flow__item _flow01_"><span class="__txt">入力</span></p>
 							<p class="c-contact-form-flow__item _flow02_"><span class="__txt">確認</span></p>
 							<p class="c-contact-form-flow__item _flow03_"><span class="__txt">完了</span></p>
