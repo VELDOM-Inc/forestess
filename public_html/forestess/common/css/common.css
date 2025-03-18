@@ -418,16 +418,16 @@ input[type=submit] {
     min-width: 0;
   }
 }
-.e-btn._yellow_ {
-  background: #FFE066;
-  border: 1px solid #FFE066;
-  color: #393939;
+.e-btn._white_ {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #008899;
 }
 @media (hover: hover) and (pointer: fine) {
-  .e-btn._yellow_:not(._disabled_):hover {
-    border: 1px solid #F2C925;
-    background: #F2C925;
-    color: #393939;
+  .e-btn._white_:not(._disabled_):hover {
+    border: 1px solid #79DDE4;
+    background: #79DDE4;
+    color: #ffffff;
   }
 }
 .e-btn._gray_ {
@@ -2685,6 +2685,11 @@ input[type=submit] {
   width: 1px;
   height: 140px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1170px) {
+  .c-about-philosophy__txt br {
+    display: none;
+  }
+}
 .c-about-overview {
   background: linear-gradient(119deg, rgba(1, 195, 243, 0.5) 0%, rgba(1, 195, 243, 0) 62.66%), #008899;
   color: #ffffff;
@@ -2750,6 +2755,9 @@ input[type=submit] {
 .c-about-overview__table .m-table td a[href*="tel:"] {
   color: #ffffff;
 }
+.c-about-overview__table .m-table th {
+  width: 20%;
+}
 .c-about-area {
   max-width: 1340px;
   margin: 0 auto;
@@ -2765,6 +2773,11 @@ input[type=submit] {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (min-width: 768px) and (max-width: 940px) {
+  .c-about-area__txt {
+    width: 45%;
+  }
+}
 .c-about-area__txt .e-h2 {
   padding: 180px 0 0;
 }
@@ -2776,9 +2789,14 @@ input[type=submit] {
   height: 672px;
   position: relative;
 }
-@media only screen and (min-width: 768px) and (max-width: 1337px) {
+@media only screen and (min-width: 940px) and (max-width: 1337px) {
   .c-about-area__img {
-    width: calc(68.75% - 50px);
+    width: calc(68.75% - 40px);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 940px) {
+  .c-about-area__img {
+    width: calc(55% - 40px);
   }
 }
 .c-about-area__img .__inner {
@@ -2821,11 +2839,27 @@ input[type=submit] {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (min-width: 768px) and (max-width: 1015px) {
+  .c-about-history__inner {
+    flex-direction: column;
+  }
+}
 .c-about-history__inner .e-h2 {
   width: calc(38.67% - 100px);
 }
+@media only screen and (min-width: 768px) and (max-width: 1015px) {
+  .c-about-history__inner .e-h2 {
+    width: 100%;
+    margin: 0 0 90px;
+  }
+}
 .c-about-history-timeline {
   width: 61.33%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1015px) {
+  .c-about-history-timeline {
+    width: 100%;
+  }
 }
 .c-about-history-timeline__item {
   display: flex;
@@ -2915,6 +2949,11 @@ input[type=submit] {
   grid-template-columns: repeat(2, 1fr);
   gap: 0 80px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1015px) {
+  .c-about-access__list {
+    gap: 0 40px;
+  }
+}
 .c-about-access__item {
   border-bottom: 2px dotted #E1E1E1;
   padding: 0 0 40px;
@@ -2926,6 +2965,11 @@ input[type=submit] {
   font-weight: 700;
   letter-spacing: 0.9px;
   color: #008899;
+}
+@media only screen and (min-width: 768px) and (max-width: 1015px) {
+  .c-about-access__ttl {
+    margin: 20px 0 15px;
+  }
 }
 
 .c-service-lead {
@@ -4066,7 +4110,7 @@ input[type=submit] {
   margin: 0 0 30px;
 }
 .l-footer-left__tel {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   font-family: "Prompt", sans-serif;

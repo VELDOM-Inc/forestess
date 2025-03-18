@@ -65,16 +65,16 @@
 	}
 
 	//カラーオプション -------------------------------
-	&._yellow_ {
-		background: g.$yellow;
-		border: 1px solid g.$yellow;
-		color: g.$text-black;
+	&._white_ {
+		background: g.$white;
+		border: 1px solid g.$white;
+		color: g.$baseColor;
 
 		&:not(._disabled_) {
 			@include g.hover {
-				border: 1px solid #F2C925;
-				background: #F2C925;
-				color: g.$text-black;
+				border: 1px solid g.$aqua;
+				background: g.$aqua;
+				color: g.$white;
 			}
 		}
 	}

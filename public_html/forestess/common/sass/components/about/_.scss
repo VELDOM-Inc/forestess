@@ -78,6 +78,12 @@
 				width: 1px;
 				height: 140px;
 			}
+
+			@media only screen and (min-width: 768px) and (max-width: 1170px) {
+				br {
+					display: none;
+				}
+			}
 		}
 	}
 
@@ -115,19 +121,19 @@
 
 				@keyframes MoveLeft {
 					from {
-					transform: translateX(100%);
+						transform: translateX(100%);
 					}
 					to {
-					transform: translateX(-100%);
+						transform: translateX(-100%);
 					}
 				}
 				
 				@keyframes MoveLeft2 {
 					from {
-					transform: translateX(0);
+						transform: translateX(0);
 					}
 					to {
-					transform: translateX(-200%);
+						transform: translateX(-200%);
 					}
 				}
 			}
@@ -165,6 +171,10 @@
 						color: g.$white;
 					}
 				}
+
+				th {
+					width: 20%;
+				}
 			}
 		}
 	}
@@ -184,6 +194,10 @@
 			flex-direction: column;
 			justify-content: center;
 
+			@media only screen and (min-width: 768px) and (max-width: 940px) {
+				width: 45%;
+			}
+
 			.e-h2 {
 				padding: 180px 0 0;
 
@@ -198,8 +212,12 @@
 			height: 672px;
 			position: relative;
 
-			@media only screen and (min-width: 768px) and (max-width: 1337px) {
-				width: calc((100% - 31.25%) - 50px);
+			@media only screen and (min-width: 940px) and (max-width: 1337px) {
+				width: calc((100% - 31.25%) - 40px);
+			}
+
+			@media only screen and (min-width: 768px) and (max-width: 940px) {
+				width: calc((100% - 45%) - 40px);
 			}
 
 			.__inner {
@@ -249,13 +267,26 @@
 			display: flex;
 			justify-content: space-between;
 
+			@media only screen and (min-width: 768px) and (max-width: 1015px) {
+				flex-direction: column;
+			}
+
 			.e-h2 {
 				width: calc((100% - 61.33%) - 100px);
+
+				@media only screen and (min-width: 768px) and (max-width: 1015px) {
+					width: 100%;
+					margin: 0 0 90px;
+				}
 			}
 		}
 
 		&-timeline {
 			width: 61.33%;
+
+			@media only screen and (min-width: 768px) and (max-width: 1015px) {
+				width: 100%;
+			}
 
 			&__item {
 				display: flex;
@@ -373,6 +404,10 @@
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			gap: 0 80px;
+
+			@media only screen and (min-width: 768px) and (max-width: 1015px) {
+				gap: 0 40px;
+			}
 		}
 
 		&__item {
@@ -386,6 +421,10 @@
 			@include g.font-bold;
 			letter-spacing: 0.9px;
 			color: g.$baseColor;
+
+			@media only screen and (min-width: 768px) and (max-width: 1015px) {
+				margin: 20px 0 15px;
+			}
 		}
 	}
 }
