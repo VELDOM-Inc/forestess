@@ -19,6 +19,9 @@
 	}
 
 	@include g.smMax {
+		margin: 0 0 30px;
+		font-size: g.$fz-l;
+		padding: 35px 0 0;
 	}
 
 	&::before {
@@ -34,7 +37,7 @@
 		line-height: 0.5;
 
 		@include g.smMax {
-			font-size: g.$fz-l;
+			font-size: 4.6rem;
 		}
 	}
 }
