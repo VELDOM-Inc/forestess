@@ -15,6 +15,7 @@
 			margin: 0 30px;
 			position: relative;
 			display: inline-block;
+			@include g.transition;
 
 			&::before ,
 			&::after {
@@ -23,6 +24,7 @@
 				border-style: solid;
 				content: "";
 				z-index: 2;
+				@include g.transition;
 			}
 
 			&::before {
@@ -39,6 +41,22 @@
 				top: 0;
 				right: -24px;
 				border-color: g.$baseColor transparent transparent transparent;
+			}
+		}
+
+		.__link {			
+			@include g.hover {
+				.__bg {
+					background: g.$aqua;
+
+					&::before {
+						border-color: transparent transparent g.$aqua transparent;
+					}
+		
+					&::after {
+						border-color: g.$aqua transparent transparent transparent;
+					}
+				}
 			}
 		}
 	}
