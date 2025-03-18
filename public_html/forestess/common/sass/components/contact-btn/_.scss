@@ -15,7 +15,7 @@
 			border: 2px solid g.$aqua;
 			position: relative;
 			padding: 70px 80px 60px;
-			background-color: #fff;
+			background-color: g.$white;
 			background-image: linear-gradient(135deg, g.$aqua 50%, transparent 50%);
 			background-position: 100%;
 			background-size: 300%;
@@ -39,19 +39,42 @@
 				background-position: 0;
 				color: g.$white;
 
+				@include g.smMax {
+					background-position: 100%;
+					color: g.$baseColor;
+				}
+
 				.__ttl ,
 				.__txt {
 					color: g.$white;
+
+					@include g.smMax {
+						color: g.$baseColor;
+					}
+				}
+
+				.__txt {
+					@include g.smMax {
+						color: g.$text-black;
+					}
 				}
 
 				.__ttl {
 					&::before {
 						color: g.$white;
+
+						@include g.smMax {
+							color: g.$baseColor;
+						}
 					}
 				}
 
 				.__ico {
 					transform: translateX(15px) translateY(0);
+
+					@include g.smMax {
+						transform: translateX(0) translateY(0);
+					}
 				}
 			}
 		}
