@@ -13,5 +13,9 @@
 	line-height: 1.3;
 	color: g.$text-black;
 	@include g.radius(2);
+
+	@include g.smMax {
+		font-size: g.$fz-s;
+	}
 }
 
