@@ -38,10 +38,14 @@
 				<div class="c-index-visual">
 					<div class="c-index-visual__inner">
 						<div class="c-index-visual-txt">
-							<h1 class="__ttl"><img src="/forestess/common/img/index/txt_visual01.svg" alt="環境を守る" class="__elem u-w100p" loading="lazy"></h1>
-							<p class="__txt"><img src="/forestess/common/img/index/txt_visual02.svg" alt="安心・信頼・品質につながる 技術力を追及する" class="__elem u-w100p" loading="lazy"></p>
+							<h1 class="__ttl anime-up">
+								<img src="/forestess/common/img/index/txt_visual01.svg" alt="環境を守る" class="__elem u-w100p" loading="lazy">
+							</h1>
+							<p class="__txt">
+								<img src="/forestess/common/img/index/txt_visual02.svg" alt="安心・信頼・品質につながる 技術力を追及する" class="__elem u-w100p" loading="lazy">
+							</p>
 						</div>
-						<div class="c-index-visual-scroll">
+						<div class="c-index-visual-scroll poyon" id="pagetop">
 							<div class="__arrow">
 								<span class="__ico icon-scroll" aria-hidden="true"></span>
 							</div>
@@ -176,8 +180,10 @@
 		<!--============================================== html_foot -->
 		<!--#include virtual="/forestess/common/inc/html_foot.html" -->
 		<!--============================================== /html_foot -->
-		<!--<script src="/forestess/common/lib/slick/slick.min.js"></script>
-		<script src="/forestess/common/js/index.js"></script>-->
-		
+		<!--<script src="/forestess/common/lib/slick/slick.min.js"></script>-->
+		<script src="/forestess/common/js/index.js"></script>
+		<script>
+			looopAnimation("pagetop", "poyon", 1000);
+		</script>
 	</body>
 </html>
