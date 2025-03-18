@@ -27,10 +27,12 @@
 		}
 
 		&-txt {
+			position: relative;
 			.__ttl {
 				border-bottom: 8px solid g.$white;
 				padding: 0 0 40px 120px;
 				margin: 0 0 40px;
+				position: relative;
 
 				@include g.smMax {
 					padding: 0 0 20px 20px;
@@ -39,8 +41,46 @@
 					border-bottom: 4px solid g.$white;
 				}
 
+				.__svg {
+				}
+
 				.cls-1 {
 					fill: g.$white;
+					display: inline-block;
+
+					@keyframes showTextFromBottom{
+						0%{
+							transform: translateY( 100% );
+							opacity: 0;
+							height: 0;
+						}
+						100%{
+							transform: translateY( 0px );
+							opacity: 1;
+							height: 100%;
+						}
+					}
+					
+					&.delay01 {
+						opacity: 0;
+						animation: showTextFromBottom .5s forwards 800ms;
+					}
+					&.delay02 {
+						opacity: 0;
+						animation: showTextFromBottom .7s forwards 800ms;
+					}
+					&.delay03 {
+						opacity: 0;
+						animation: showTextFromBottom .9s forwards 800ms;
+					}
+					&.delay04 {
+						opacity: 0;
+						animation: showTextFromBottom 1.1s forwards 800ms;
+					}
+					&.delay05 {
+						opacity: 0;
+						animation: showTextFromBottom 1.3s forwards 800ms;
+					}
 				}
 			}
 
@@ -50,6 +90,33 @@
 				@include g.smMax {
 					padding: 0 0 0 20px;
 					width: 80%;
+				}
+
+				.cls-1 {
+					fill: g.$white;
+					display: inline-block;
+
+					@keyframes showTextFromBottom{
+						0%{
+							transform: translateY( 100% );
+							opacity: 0;
+							height: 0;
+						}
+						100%{
+							transform: translateY( 0px );
+							opacity: 1;
+							height: 100%;
+						}
+					}
+					
+					&.delay01 {
+						opacity: 0;
+						animation: showTextFromBottom .5s forwards 800ms;
+					}
+					&.delay02 {
+						opacity: 0;
+						animation: showTextFromBottom .6s forwards 800ms;
+					}
 				}
 			}
 		}
