@@ -729,9 +729,14 @@ input[type=submit] {
   font-family: "Prompt", sans-serif;
   text-align: center;
 }
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .e-h1__ttl {
+    font-size: 14rem;
+  }
+}
 @media screen and (max-width:768px) {
   .e-h1__ttl {
-    font-size: 8rem;
+    font-size: 5.6rem;
   }
 }
 .e-h1__ttl .__en {
@@ -742,6 +747,7 @@ input[type=submit] {
 @media screen and (max-width:768px) {
   .e-h1__ttl .__en {
     padding: 30px 0 0;
+    word-break: break-all;
   }
 }
 .e-h1__ttl .__en::before {
@@ -783,7 +789,7 @@ input[type=submit] {
 @media screen and (max-width:768px) {
   .e-h1._about_ .__en {
     line-height: 0.8;
-    margin: 0 0 -10px;
+    margin: 0 0 -5px;
   }
 }
 .e-h1._service_ {
@@ -793,6 +799,25 @@ input[type=submit] {
 @media screen and (max-width:768px) {
   .e-h1._service_ .__en {
     line-height: 0.8;
+    margin: 0 0 -5px;
+  }
+}
+.e-h1._error_ {
+  background: url(/forestess/common/img/common/bg_ttl.png) center bottom no-repeat;
+  background-size: cover;
+}
+.e-h1._error_ .__en {
+  line-height: 0.9;
+  margin: 0 0 -30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .e-h1._error_ .__en {
+    margin: 0 0 -20px;
+  }
+}
+@media screen and (max-width:768px) {
+  .e-h1._error_ .__en {
+    line-height: 0.9;
     margin: 0 0 -10px;
   }
 }
@@ -3556,7 +3581,7 @@ input[type=submit] {
 }
 .c-service-heavy__inner .c-service-ttl {
   order: 2;
-  width: 50%;
+  width: 70%;
   z-index: 2;
   position: absolute;
   text-align: right;
@@ -3783,24 +3808,6 @@ input[type=submit] {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  /*@keyframes showTextFromBottom{
-  	0%{
-  		transform: translateY( 100% );
-  	}
-  	100%{
-  		transform: translateY( 0px );
-  	}
-  }
-  .anime-up.displayed span{
-  	animation: showText 1s backwards;
-  	display: inline-block;
-  }
-  .anime-up.displayed > span{
-  	overflow: hidden;
-  }
-  .anime-up.displayed > span > span{
-  	animation: showTextFromBottom 0.5s backwards;
-  }*/
 }
 .c-index-visual__inner {
   width: 100%;
@@ -3819,6 +3826,20 @@ input[type=submit] {
 }
 .c-index-visual-txt {
   position: relative;
+  min-width: 722px;
+  margin: 0 auto 0 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .c-index-visual-txt {
+    min-width: auto;
+    width: 50%;
+  }
+}
+@media screen and (max-width:768px) {
+  .c-index-visual-txt {
+    width: 80%;
+    min-width: auto;
+  }
 }
 .c-index-visual-txt .__ttl {
   border-bottom: 8px solid #ffffff;
@@ -3826,11 +3847,16 @@ input[type=submit] {
   margin: 0 0 40px;
   position: relative;
 }
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .c-index-visual-txt .__ttl {
+    padding: 0 0 30px 50px;
+    margin: 0 0 30px;
+  }
+}
 @media screen and (max-width:768px) {
   .c-index-visual-txt .__ttl {
     padding: 0 0 20px 20px;
     margin: 0 0 20px;
-    width: 80%;
     border-bottom: 4px solid #ffffff;
   }
 }
@@ -3873,11 +3899,19 @@ input[type=submit] {
 .c-index-visual-txt .__txt {
   padding: 0 0 0 120px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .c-index-visual-txt .__txt {
+    padding: 0 0 0 50px;
+  }
+}
 @media screen and (max-width:768px) {
   .c-index-visual-txt .__txt {
     padding: 0 0 0 20px;
-    width: 80%;
   }
+}
+.c-index-visual-txt .__txt .__svg {
+  width: 100%;
+  display: block;
 }
 .c-index-visual-txt .__txt .cls-1 {
   fill: #ffffff;
@@ -4344,7 +4378,7 @@ input[type=submit] {
 }
 @media screen and (hover: hover) and (pointer: fine) and (max-width:768px) {
   .c-index-about__link:hover .__ico {
-    transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0) rotate(-90deg);
   }
 }
 
