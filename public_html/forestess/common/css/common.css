@@ -1068,11 +1068,16 @@ input[type=submit] {
 }
 
 .m-noscript {
-  padding: 10px 15px;
+  padding: 3px 15px;
   background: #008899;
   color: #ffffff;
   font-size: 1.4rem;
   text-align: center;
+}
+@media screen and (max-width:768px) {
+  .m-noscript {
+    padding: 75px 15px 15px;
+  }
 }
 
 .m-pager {
