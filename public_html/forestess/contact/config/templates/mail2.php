@@ -6,11 +6,11 @@
 
 [お問い合わせの種類] <?php echo $class ?> 
 
-[氏名] <?php echo $name ?>（<?php echo $kana ?>） 様
+[お名前] <?php echo $name ?>（<?php echo $kana ?>） 様
 
-[会社名 ／ 組織名] <?php echo $company ?> 
+[会社名] <?php echo $company ?> 
 
-[住所] 
+[ご住所] 
 〒 <?php echo $zip ?> 
 <?php echo $address ?> 
 
@@ -19,4 +19,4 @@
 [電話番号] <?php echo $tel ?> 
 
 [お問い合わせ詳細]
-<?php echo $comment ?>
+<?php echo $comment ?>　
