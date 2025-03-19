@@ -28,33 +28,47 @@
 
 		&-txt {
 			position: relative;
+			min-width: 722px;
+			margin: 0 auto 0 0;
+
+			@media only screen and (min-width: 768px) and (max-width: 1000px) {
+				min-width: auto;
+				width: 50%;
+			}
+			
+			@include g.smMax {
+				width: 80%;
+				min-width: auto;
+			}
+
 			.__ttl {
 				border-bottom: 8px solid g.$white;
 				padding: 0 0 40px 120px;
 				margin: 0 0 40px;
 				position: relative;
 
+				@media only screen and (min-width: 768px) and (max-width: 1000px) {
+					padding: 0 0 30px 50px;
+					margin: 0 0 30px;
+				}
+
 				@include g.smMax {
 					padding: 0 0 20px 20px;
 					margin: 0 0 20px;
-					width: 80%;
 					border-bottom: 4px solid g.$white;
-				}
-
-				.__svg {
 				}
 
 				.cls-1 {
 					fill: g.$white;
 					display: inline-block;
 
-					@keyframes showTextFromBottom{
-						0%{
+					@keyframes showTextFromBottom {
+						0% {
 							transform: translateY( 100% );
 							opacity: 0;
 							height: 0;
 						}
-						100%{
+						100% {
 							transform: translateY( 0px );
 							opacity: 1;
 							height: 100%;
@@ -87,22 +101,30 @@
 			.__txt {
 				padding: 0 0 0 120px;
 
+				@media only screen and (min-width: 768px) and (max-width: 1000px) {
+					padding: 0 0 0 50px;
+				}
+
 				@include g.smMax {
 					padding: 0 0 0 20px;
-					width: 80%;
+				}
+
+				.__svg {
+					width: 100%;
+					display: block;
 				}
 
 				.cls-1 {
 					fill: g.$white;
 					display: inline-block;
 
-					@keyframes showTextFromBottom{
-						0%{
+					@keyframes showTextFromBottom {
+						0% {
 							transform: translateY( 100% );
 							opacity: 0;
 							height: 0;
 						}
-						100%{
+						100% {
 							transform: translateY( 0px );
 							opacity: 1;
 							height: 100%;
@@ -120,26 +142,6 @@
 				}
 			}
 		}
-
-		/*@keyframes showTextFromBottom{
-			0%{
-				transform: translateY( 100% );
-			}
-			100%{
-				transform: translateY( 0px );
-			}
-		}
-		.anime-up.displayed span{
-			animation: showText 1s backwards;
-			display: inline-block;
-		}
-		.anime-up.displayed > span{
-			overflow: hidden;
-		}
-		.anime-up.displayed > span > span{
-			animation: showTextFromBottom 0.5s backwards;
-		}*/
-
 
 		&-scroll {
 			position: absolute;
@@ -567,7 +569,7 @@
 					transform: translateX(0) translateY(8px);
 
 					@include g.smMax {
-						transform: translateX(0) translateY(0);
+						transform: translateX(0) translateY(0) rotate(-90deg);
 					}
 				}
 			}
