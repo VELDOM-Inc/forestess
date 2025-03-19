@@ -340,14 +340,20 @@ input[type=submit] {
 .e-a-txt-arrow .__ico {
   color: #008899;
   line-height: 1.2;
+  font-size: 1.3rem;
 }
 .e-a-txt-arrow .__ico::before {
   display: inline-block;
 }
 .e-a-txt-arrow .__ico:first-child {
   position: absolute;
-  top: 3px;
+  top: 10px;
   left: 5px;
+}
+@media screen and (max-width:768px) {
+  .e-a-txt-arrow .__ico:first-child {
+    top: 5px;
+  }
 }
 @media screen and (max-width:768px) {
   .e-a-txt-arrow .__ico.icon-filter_none {
@@ -363,8 +369,8 @@ input[type=submit] {
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  min-width: 300px;
-  height: 65px;
+  min-width: 240px;
+  height: 50px;
   margin: 10px 5px;
   padding: 0 20px;
   background: #008899;
@@ -390,9 +396,7 @@ input[type=submit] {
 }
 @media (hover: hover) and (pointer: fine) {
   .e-btn:not(._disabled_):hover {
-    background: #ffffff;
-    border-color: #008899;
-    color: #008899;
+    background: #79DDE4;
   }
 }
 .e-btn._disabled_ {
@@ -802,21 +806,21 @@ input[type=submit] {
     margin: 0 0 -5px;
   }
 }
-.e-h1._error_ {
+.e-h1._default_ {
   background: url(/forestess/common/img/common/bg_ttl.png) center bottom no-repeat;
   background-size: cover;
 }
-.e-h1._error_ .__en {
+.e-h1._default_ .__en {
   line-height: 0.9;
   margin: 0 0 -30px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
-  .e-h1._error_ .__en {
+  .e-h1._default_ .__en {
     margin: 0 0 -20px;
   }
 }
 @media screen and (max-width:768px) {
-  .e-h1._error_ .__en {
+  .e-h1._default_ .__en {
     line-height: 0.9;
     margin: 0 0 -10px;
   }
@@ -946,7 +950,7 @@ input[type=submit] {
 }
 .e-list-circle__item::before {
   position: absolute;
-  top: 0.8em;
+  top: 1em;
   left: 0;
   display: block;
   content: "";
@@ -954,6 +958,11 @@ input[type=submit] {
   width: 4px;
   height: 4px;
   border-radius: 50%;
+}
+@media screen and (max-width:768px) {
+  .e-list-circle__item::before {
+    top: 0.8em;
+  }
 }
 .e-list-circle._black_ .e-list-circle__item::before {
   background: #393939;
@@ -4662,7 +4671,7 @@ input[type=submit] {
   overflow-y: auto;
   overscroll-behavior-y: contain;
   pointer-events: none;
-  transition: background-color 0s;
+  transition: background-color 50ms;
 }
 @media screen and (max-width:768px) {
   .l-gnav {

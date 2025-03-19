@@ -8,12 +8,16 @@
 		
 		&::before {
 			position: absolute;
-			top: 0.8em;
+			top: 1.0em;
 			left: 0;
 			display: block;
 			content: '';
 			background: g.$baseColor;
 			@include g.circle(4);
+
+			@include g.smMax {
+				top: 0.8em;
+			}
 		}
 	}
 	&._black_ &__item {

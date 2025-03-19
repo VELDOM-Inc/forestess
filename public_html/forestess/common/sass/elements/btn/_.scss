@@ -5,8 +5,8 @@
 	align-items: center;
 	justify-content: center;
 	max-width: 100%;
-	min-width: 300px;
-	height: 65px;
+	min-width: 240px;
+	height: 50px;
 	margin: 10px 5px;
 	padding: 0 20px;
 	background: g.$baseColor;
@@ -30,9 +30,7 @@
 		cursor: pointer;
 
 		@include g.hover {
-			background: g.$white;
-			border-color: g.$baseColor;
-			color: g.$baseColor;
+			background: g.$aqua;
 		}
 	}
 	&._disabled_ {

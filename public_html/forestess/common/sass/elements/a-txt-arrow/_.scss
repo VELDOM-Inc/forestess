@@ -8,14 +8,19 @@
 	.__ico {
 		color: g.$baseColor;
 		line-height: 1.2;
-		
+		font-size: g.$fz-xs;
+
 		&::before {
 			display: inline-block;
 		}
 		&:first-child {
 			position: absolute;
-			top: 3px;
+			top: 10px;
 			left: 5px;
+
+			@include g.smMax {
+				top: 5px;
+			}
 		}
 		&.icon-filter_none {
 			@include g.smMax {
