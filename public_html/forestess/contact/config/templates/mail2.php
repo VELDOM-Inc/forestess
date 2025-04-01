@@ -4,7 +4,7 @@
 [お問い合わせ番号] <?php echo $__serial ?> 
 <?php endif; ?>
 
-[お問い合わせの種類] <?php echo $class ?> 
+[お問い合わせ内容] <?php echo $class ?> 
 
 [お名前] <?php echo $name ?>（<?php echo $kana ?>） 様
 

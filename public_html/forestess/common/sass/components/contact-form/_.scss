@@ -82,15 +82,16 @@
 			display: inline-flex;
 			align-items: center;
 			justify-content: center;
-			border: 1px solid g.$baseColor;
+			border: 1px solid #6199A0;
 			background: g.$white;
-			color: g.$baseColor;
+			color: #6199A0;
 			@include g.font-bold;
 
 			.c-contact & {
 				&._flow01_ {
 					background: g.$baseColor;
 					color: g.$white;
+					border: 1px solid g.$baseColor;
 				}
 			}
 
@@ -98,6 +99,7 @@
 				&._flow02_ {
 					background: g.$baseColor;
 					color: g.$white;
+					border: 1px solid g.$baseColor;
 				}
 			}
 
@@ -105,6 +107,7 @@
 				&._flow03_ {
 					background: g.$baseColor;
 					color: g.$white;
+					border: 1px solid g.$baseColor;
 				}
 			}
 
@@ -117,11 +120,11 @@
 			&::after {
 				position: absolute;
 				content: "";
-				background: g.$baseColor;
+				background: #6199A0;
 				top: 16px;
 				right: -42px;
 				width: 42px;
-				height: 1px;
+				height: 2px;
 
 				@include g.smMax {
 					width: 22px;

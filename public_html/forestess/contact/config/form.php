@@ -3,7 +3,7 @@
 return array (
 	array (
 		'field' => 'class',
-		'label' => 'お問い合わせの種類',
+		'label' => 'お問い合わせ内容',
 		'rules' => 'trim',
 		'options' => array('会社について', 'その他')
 	),

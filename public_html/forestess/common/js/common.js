@@ -56,7 +56,7 @@ $(function() {
 		$('body').toggleClass('_gnav-show_');
 	});
 	
-	$('.l-gnav__item a[href*="#"],.l-gnav-btn a[href*="#"]').on('click', function () {
+	$('.l-gnav-right__detail a[href*="#"],.l-gnav-right-sub__item a[href*="#"]').on('click', function () {
     $(".l-header-menu").removeClass('_active_');
     $("body").removeClass('_gnav-show_');
   });

@@ -62,7 +62,7 @@ require_once("./src/bootstrap.php");
 							<table class="m-table _col1_ u-mb-xl inview fadeup delay01">
 								<tbody class="m-table--body">
 									<tr>
-										<th class="_green_">お問い合わせの種類</th>
+										<th class="_green_">お問い合わせ内容</th>
 										<td><?php echo e($form->get('class')); ?></td>
 									</tr>
 									<tr>

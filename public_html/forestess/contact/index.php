@@ -51,7 +51,7 @@ require_once("./src/bootstrap.php");
 					<div class="m-box _border_ c-contact-form-tel">
 						<h2 class="c-contact-form-tel__ttl inview fadeup">お電話でのお問い合わせ</h2>
 						<div class="c-contact-form-tel__txt inview fadeup delay01">
-							<p class="__tel">TEL：<a href="tel:092-419-2557" class="__link">092-419-2557</a></p>
+							<p class="__tel">TEL. <a href="tel:092-419-2557" class="__link">092-419-2557</a></p>
 							<p class="__time">受付時間：月～金曜日 9：00～17：00</p>
 						</div>
 					</div>
@@ -59,7 +59,7 @@ require_once("./src/bootstrap.php");
 
 					<!-- .c-contact-form -->
 					<section id="form" class="c-contact-form">
-						<h2 class="e-h4 inview fadeup">下記のお問い合わせフォームよりお気軽にご相談ください</h2>
+						<h2 class="e-h4 inview fadeup">下記のお問い合わせフォームよりお気軽にご相談ください。</h2>
 						<p class=" inview fadeup delay01 u-mb-l">当ページでのお問い合わせおよびお見積依頼のお申込については、<br class="u-sm-min">3営業日以内に返信させていただいております。</p>
 						<p class=" inview fadeup delay01 u-mb-xxs">3営業日を過ぎても当社から何もアクセスがない場合は、当社へ直接お電話（TEL. <a href="tel:092-419-2557">092-419-2557</a>）ください。</p>
 						<p class=" inview fadeup delay01 u-mb-xxs">ご記入いただいたメールアドレスの誤記やメール受信設定等が原因でお客様にメールを返信できない場合があります。</p>
@@ -84,7 +84,7 @@ require_once("./src/bootstrap.php");
 							<table class="m-table _col1_ u-mb-xl inview fadeup delay02">
 								<tbody class="m-table--body">
 									<tr>
-										<th class="_green_">お問い合わせの種類</th>
+										<th class="_green_">お問い合わせ内容</th>
 										<td class="<?php if ($form->is_error('class')) : ?>error<?php endif; ?>">
 											<?php foreach($form->get_options('class') as $class) : ?>
 											<label class="e-form-check u-mr-m">
@@ -119,7 +119,7 @@ require_once("./src/bootstrap.php");
 									<tr>
 										<th class="_green_">ご住所</th>
 										<td class="<?php if ($form->is_error('zip')) : ?> error<?php endif; ?> <?php if ($form->is_error('address')) : ?> error<?php endif; ?>">
-											〒<input name="zip" type="text" value="<?php echo e($form->get('zip')); ?>" class="u-ml-xs e-form-text p-postal-code _w-s_" size="8" maxlength="8" placeholder="0123456">
+											〒<input name="zip" type="text" value="<?php echo e($form->get('zip')); ?>" class="u-ml-xs e-form-text p-postal-code _w-s_" id="input_name" size="8" maxlength="8" placeholder="0123456">
 											<p class="u-mt-xxxs">※郵便番号はハイフンなしで入力してください（例: 0123456）</p>
 											<input name="address" type="text" value="<?php echo e($form->get('address')); ?>" class="u-mt-s p-region p-locality p-street-address p-extended-address e-form-text" placeholder="ご住所を入力してください">
 											<p class="u-mt-xxxs">※マンション名・建物名もご入力ください</p>
@@ -188,5 +188,12 @@ require_once("./src/bootstrap.php");
 		<?php include($_SERVER['DOCUMENT_ROOT']).'/forestess/common/inc/html_foot.html'; ?>
 		<!--============================================== /html_foot -->
 		<script src="//yubinbango.github.io/yubinbango/yubinbango.js"></script>
+		<script type="text/javascript">
+			//費用は数値しか入力できない
+			$('#input_name').on('input', function() {
+				let value = $(this).val();
+				$(this).val(value.replace(/[^0-9]+/g, ''));
+			});
+		</script>
 	</body>
 </html>
