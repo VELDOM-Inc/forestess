@@ -1,0 +1,125 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.e-h1 {
+	width: 100%;
+	height: 560px;
+	color: g.$white;
+	padding: 100px 30px 0;
+
+	@include g.smMax {
+		height: 330px;
+		padding: 75px 15px 0;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		height: 100%;
+	}
+
+	&__ttl {
+		font-size: 20.0rem;
+		font-style: italic;
+		font-weight: 500;
+		line-height: 1.0;
+		@include g.font-en;
+		text-align: center;
+
+		@media only screen and (min-width: 768px) and (max-width: 1300px) {
+			font-size: 14.0rem;
+		}
+
+		@include g.smMax {
+			font-size: 5.6rem;
+		}
+		
+		.__en {
+			position: relative;
+			padding: 90px 0 0;
+			line-height: 0.6;
+
+			@include g.smMax {
+				padding: 30px 0 0;
+				word-break: break-all;
+			}
+
+			&::before {
+				content: attr(data-number);
+				top: 0;
+				@include g.centering-elements(true, false);
+				font-size: 6.4rem;
+				color: g.$white;
+				@include g.font-bold;
+				@include g.font-en;
+				font-style: italic;
+				line-height: 0;
+				@include g.transition;
+
+				@include g.smMax {
+					font-size: 3.2rem;
+				}
+			}
+		}
+	}
+
+	&._privacy_ {
+		background: url(/common/img/privacy/bg_ttl_privacy.png) center bottom no-repeat;
+		background-size: cover;
+
+		.__en {
+			line-height: 1.0;
+			padding: 20px 0 0;
+		}
+	}
+
+	&._contact_ {
+		background: url(/common/img/contact/bg_ttl_contact.jpg) center bottom no-repeat;
+		background-size: cover;
+	}
+
+	&._about_ {
+		background: url(/common/img/about/bg_ttl_about.jpg) center bottom no-repeat;
+		background-size: cover;
+
+		@include g.smMax {
+			.__en {
+				line-height: 0.8;
+				margin: 0 0 -5px;
+			}
+		}
+	}
+
+	&._service_ {
+		background: url(/common/img/service/bg_ttl_service.jpg) center bottom no-repeat;
+		background-size: cover;
+
+		@include g.smMax {
+			.__en {
+				line-height: 0.8;
+				margin: 0 0 -5px;
+			}
+		}
+	}
+
+	&._default_ {
+		background: url(/common/img/common/bg_ttl.png) center bottom no-repeat; 
+		background-size: cover;
+
+		.__en {
+			line-height: 0.9;
+			margin: 0 0 -30px;
+
+			@media only screen and (min-width: 768px) and (max-width: 1300px) {
+				margin: 0 0 -20px;
+			}
+		}
+
+		@include g.smMax {
+			.__en {
+				line-height: 0.9;
+				margin: 0 0 -10px;
+			}
+		}
+	}
+}
