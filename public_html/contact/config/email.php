@@ -9,7 +9,6 @@ return array(
 
 		// 送信元メールアドレス
 		'from' => 'contact@forestess.co.jp',
-		//'from' => 's.matsushima@veldom.co.jp',
 
 		// 送信先メールアドレス
 		'to' => '', // input['name="email"'] に送信する場合は空
@@ -41,12 +40,10 @@ return array(
 
 		// 送信元メールアドレス
 		'from' => 'contact@forestess.co.jp',
-		//'from' => 's.matsushima@veldom.co.jp',
 
 		// 送信先メールアドレス
 		// class（区分）の選択によって送信先を変更する例
 		'to' => 'contact@forestess.co.jp',
-		//'to' => 's.matsushima@veldom.co.jp',
 
 		// CCメールアドレス
 		'cc' => '',
