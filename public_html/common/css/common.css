@@ -27,7 +27,9 @@ body {
   font-size: 1rem;
   line-height: 1;
   position: relative;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
   font-smoothing: antialiased;
   width: 100%;
   height: 100%;
@@ -181,7 +183,9 @@ sup {
 
 input,
 textarea {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   max-width: 100%;
 }
 
@@ -193,6 +197,10 @@ textarea {
   }
 }
 
+input::-moz-placeholder {
+  opacity: 0.5;
+}
+
 input::placeholder {
   opacity: 0.5;
 }
@@ -200,7 +208,9 @@ input::placeholder {
 button,
 input[type=button],
 input[type=submit] {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 /* ふわっと表示 */
@@ -681,6 +691,11 @@ input[type=submit] {
 .e-form-text._w-a_ {
   width: auto;
 }
+.e-form-text::-moz-placeholder {
+  color: #A8A8A8;
+  opacity: 1;
+  font-weight: 400;
+}
 .e-form-text::placeholder, .e-form-text::-moz-placeholder, .e-form-text:-ms-input-placeholder, .e-form-text::-webkit-input-placeholder {
   color: #A8A8A8;
   opacity: 1;
@@ -700,6 +715,11 @@ input[type=submit] {
   resize: vertical;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
+}
+.e-form-textarea::-moz-placeholder {
+  color: rgb(168, 168, 168);
+  opacity: 1;
+  font-weight: 300;
 }
 .e-form-textarea::placeholder {
   color: rgb(168, 168, 168);
@@ -3030,7 +3050,8 @@ input[type=submit] {
 .c-about-area__img .__elem {
   width: auto !important;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .c-about-area__list {
   display: flex;
@@ -3514,7 +3535,8 @@ input[type=submit] {
 .c-service-refrigerant-img .__elem {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3633,7 +3655,8 @@ input[type=submit] {
 .c-service-heavy-img .__elem {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3668,7 +3691,8 @@ input[type=submit] {
   width: calc((100% - 120px) / 3);
   margin: 0 20px 40px;
   box-sizing: border-box;
-  border-image: url(/common/img/service/bg_work.svg) 100/100px/0 round;
+  -o-border-image: url(/common/img/service/bg_work.svg) 100/100px/0 round;
+     border-image: url(/common/img/service/bg_work.svg) 100/100px/0 round;
   border-style: solid;
   background: #ffffff;
 }
@@ -3728,7 +3752,8 @@ input[type=submit] {
 .c-service-work-slider__item .__elem {
   width: auto !important;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .c-service-work-slider .slick-dots {
   bottom: 0 !important;
@@ -4027,7 +4052,8 @@ input[type=submit] {
 .c-index-visual-bg .__elem {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .c-index-service {
   padding: 150px 30px;
@@ -4071,7 +4097,8 @@ input[type=submit] {
 .c-index-service-img .__elem {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .c-index-service-detail {
   width: 58.59%;
@@ -4466,6 +4493,7 @@ input[type=submit] {
 }
 
 .l-header {
+  background: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -4496,21 +4524,23 @@ input[type=submit] {
   color: #393939;
 }
 .l-header.is-animation {
-  background: #ffffff;
+  /*background: g.$white;*/
+}
+.l-header.is-animation .l-header-logo {
+  /*._normal_ {
+  	display: block;
+  }*/
+  /*._white_ {
+  	display: none;
+  }*/
 }
 .l-header.is-animation .l-header-logo__link {
   /*.__path {
   	pointer-events: all;
   }*/
 }
-.l-header.is-animation .l-header-logo ._normal_ {
-  display: block;
-}
-.l-header.is-animation .l-header-logo ._white_ {
-  display: none;
-}
 .l-header.is-animation .l-header-nav__link {
-  color: #393939;
+  /*color: g.$text-black;*/
 }
 @media (hover: hover) and (pointer: fine) {
   .l-header.is-animation .l-header-nav__link:hover {
@@ -4521,10 +4551,10 @@ input[type=submit] {
   color: #008899;
 }
 .l-header.is-animation .l-header-menu__item {
-  background: #393939;
+  /*background: g.$text-black;*/
 }
 .l-header.is-animation .l-header-menu__txt {
-  color: #393939;
+  /*color: g.$text-black;*/
 }
 .l-header__inner {
   display: flex;
@@ -4561,6 +4591,9 @@ input[type=submit] {
 }
 .l-header-logo__link {
   display: block;
+  /*._white_ {
+  	display: block;
+  }*/
   /*.__path {
   	fill: g.$white;
   	@include g.transition;
@@ -4570,9 +4603,6 @@ input[type=submit] {
   width: 100%;
 }
 .l-header-logo__link ._normal_ {
-  display: none;
-}
-.l-header-logo__link ._white_ {
   display: block;
 }
 .l-header-logo__link .__ico {
@@ -4600,7 +4630,8 @@ input[type=submit] {
   }
 }
 .l-header-nav__link {
-  color: #ffffff;
+  /*color: g.$white;*/
+  color: #393939;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
 }
@@ -4644,7 +4675,8 @@ input[type=submit] {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #ffffff;
+  /*background: g.$white;*/
+  background: #393939;
   border-radius: 2px;
   transition: 0.3s all;
 }
@@ -4673,7 +4705,8 @@ input[type=submit] {
   font-family: "Prompt", sans-serif;
   font-size: 2rem;
   font-weight: 500;
-  color: #ffffff;
+  /*color: g.$white;*/
+  color: #393939;
   margin: 0 0 0 5px;
   transition: 0.3s all;
 }
